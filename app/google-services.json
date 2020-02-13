@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "515887803578",
+    "firebase_url": "https://appcamping-7061a.firebaseio.com",
+    "project_id": "appcamping-7061a",
+    "storage_bucket": "appcamping-7061a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515887803578:android:49595da3716ed0bd026683",
+        "android_client_info": {
+          "package_name": "com.example.appcamping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515887803578-r2uqgdgiia7hfmcojga334n5mpq9k7ij.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appcamping",
+            "certificate_hash": "3304006677e7ff9a5838709e31281a74ce08a52d"
+          }
+        },
+        {
+          "client_id": "515887803578-t5oplniseffr0p8op4gmni5niokm6t0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqwUamj9rF0bfRokCFOdm0tILSJIDH5Yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515887803578-t5oplniseffr0p8op4gmni5niokm6t0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
