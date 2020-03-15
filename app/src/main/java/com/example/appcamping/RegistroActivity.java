@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -105,7 +106,8 @@ public class RegistroActivity extends AppCompatActivity {
                             else{
 
                                 Toast.makeText(RegistroActivity.this, "Correcto", Toast.LENGTH_SHORT).show();
-                                Intent home = new Intent(RegistroActivity.this, MainActivity.class);
+                                Intent home = new Intent(RegistroActivity.this, IniciadoActivity.class);
+
                                 startActivity(home);
                             }
 
@@ -122,7 +124,18 @@ public class RegistroActivity extends AppCompatActivity {
     }
 
     public void Registro(View view) {
-        Intent registro = new Intent(this, LoginActivity.class);
+        Intent registro = new Intent(this, IniciadoActivity.class);
         startActivity(registro);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        if (vAuth.getCurrentUser() != null) {
+            startActivity(new Intent(RegistroActivity.this, IniciadoActivity.class));
+            finish();
+
+        }
     }
 }
