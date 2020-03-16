@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -21,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText vEmail;
     private EditText vPassword;
     private Button vBotonIniciar;
+    private GoogleApiClient googleApiClient;
 
     //datos de inicio
     private String email = "";
@@ -32,6 +35,10 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
+        googleApiClient = new GoogleApiClient.Builder(this).enableAutoManage(this, this).addApi(Auth., gso).build();
 
         vAuth = FirebaseAuth.getInstance();
 
