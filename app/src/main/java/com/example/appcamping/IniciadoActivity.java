@@ -28,8 +28,8 @@ public class IniciadoActivity extends AppCompatActivity {
 
         //AQUI MOSTRAMOS LA UID DEL USUARIO Y COMPROBAMOS SI ES IGUAL PARA ASÍ MOSTRAR O NO EL BOTON
         Toast.makeText(this, ""+vAuth.getCurrentUser().getUid(), Toast.LENGTH_SHORT).show();
-        admin = vAuth.getCurrentUser().getUid();
-        if(admin == adminbueno){
+        admin = vAuth.getCurrentUser().getEmail();
+        if(admin.equals("hola@hola.com")){                          //comprueba que el usuario es administrador y oculta el boton
             View b = findViewById(R.id.buttonReservas);
             b.setVisibility(View.GONE);
         }

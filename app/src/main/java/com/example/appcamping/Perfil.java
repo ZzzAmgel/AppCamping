@@ -5,22 +5,31 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.MimeTypeMap;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.ActionCodeSettings;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnPausedListener;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageMetadata;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+
+import java.io.File;
 
 public class Perfil extends AppCompatActivity {
 
@@ -28,74 +37,89 @@ public class Perfil extends AppCompatActivity {
     FirebaseAuth vAuth;
     private String email;
     private ProgressDialog vLoading;
-    private Button mStoragebtn;
-    private StorageReference mStorage;
+    public Uri imguri;
+    Button ch,up;
+    ImageView img;
+    //private Button mStoragebtn;
+    //private StorageReference mStorage;
+    private StorageReference mStorageRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
 
-        vAuth = FirebaseAuth.getInstance();
+        View b = findViewById(R.id.btnConfirmarSubida);
+        b.setVisibility(View.GONE);
 
-        mStoragebtn = (Button) findViewById(R.id.btnSubirImagen);
-        mStorage = FirebaseStorage.getInstance().getReference();
-        mStoragebtn.setOnClickListener(new View.OnClickListener() {
+        mStorageRef = FirebaseStorage.getInstance().getReference("fotos");
+
+        vAuth = FirebaseAuth.getInstance();
+        ch=(Button)findViewById(R.id.btnSubirImagen);
+        up=(Button)findViewById(R.id.btnConfirmarSubida);
+        img=(ImageView)findViewById(R.id.imgview);
+        ch.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_PICK);
-                intent.setType("image/*");
-                startActivityForResult(intent,GALLERY_INTENT);
+            public void onClick(View view) {
+                Filechooser();
 
             }
         });
 
+        up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fileuploader();
+            }
+        });
+    }
+    private String getExtension(Uri uri){
+        ContentResolver cr=getContentResolver();
+        MimeTypeMap mimeTypeMap=MimeTypeMap.getSingleton();
+        return mimeTypeMap.getExtensionFromMimeType(cr.getType(uri));
+    }
+    private void Fileuploader(){
+        StorageReference Ref=mStorageRef.child(System.currentTimeMillis()+"."+getExtension(imguri));
+
+        Ref.putFile(imguri)
+                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        // Get a URL to the uploaded content
+                        //Uri downloadUrl = mStorageRef.getStorage();
+                        Toast.makeText(Perfil.this, "La imagen se ha subido correctamente", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception exception) {
+                        // Handle unsuccessful uploads
+                        // ...
+                    }
+                });
+
+    }
+
+    private void Filechooser(){
+
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(intent.ACTION_GET_CONTENT);
+        startActivityForResult(intent, 1);
+        View b = findViewById(R.id.btnConfirmarSubida);
+        b.setVisibility(View.VISIBLE);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-        if(requestCode == GALLERY_INTENT && resultCode == RESULT_OK){
-
-            Uri uri = data.getData();
-
-            StorageReference filePath = mStorage.child("fotos").child(uri.getLastPathSegment());
-
-            filePath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                    Toast.makeText(Perfil.this, "Se ha subido correctamente la foto", Toast.LENGTH_SHORT).show();
-                }
-            });
-
+        if(requestCode == 1 && resultCode == RESULT_OK && data!=null && data.getData() != null){
+            imguri=data.getData();
+            img.setImageURI(imguri);
 
         }
     }
 
-    private void resetPassword(View view){
-        vLoading = new ProgressDialog(this);
-        vAuth.setLanguageCode("es");
-        email = vAuth.getCurrentUser().getEmail();
-        vAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-
-                if(task.isSuccessful()){
-
-                    Toast.makeText(Perfil.this, "Se ha enviado un correo para cambiar la contraseña", Toast.LENGTH_SHORT).show();
-                    vLoading.setMessage("Espere un momento...");
-                    vLoading.setCanceledOnTouchOutside(false);
-                    vLoading.show();
-
-                }
-                else{
-                    Toast.makeText(Perfil.this, "No se pudo realizar esta operación", Toast.LENGTH_SHORT).show();
-                }
-                vLoading.dismiss();
-            }
-        });
-    }
 
     public void CambiarPass(View view){
         vLoading = new ProgressDialog(this);

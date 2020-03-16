@@ -48,7 +48,7 @@
         android:id="@+id/btnSubirImagen"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:onClick="CloseSesion"
+        android:onClick="EnviarFoto"
         android:text="Subir Imágen"
         app:layout_constraintBottom_toTopOf="@+id/btnCerrarSesion"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,4 +100,28 @@
         android:text="E-mail"
         app:layout_constraintBottom_toTopOf="@+id/btnChangePass"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="159dp"
+        android:layout_height="153dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubirImagen"
+        app:layout_constraintVertical_bias="0.192"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnConfirmarSubida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Foto"
+        app:layout_constraintBottom_toTopOf="@+id/btnCerrarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toEndOf="@+id/imgview"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubirImagen"
+        app:layout_constraintVertical_bias="0.791" />
 </androidx.constraintlayout.widget.ConstraintLayout>

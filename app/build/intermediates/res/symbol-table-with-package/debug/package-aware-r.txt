@@ -1239,8 +1239,10 @@ id blocking
 id bottom
 id btnCerrarSesion
 id btnChangePass
+id btnConfirmarSubida
 id btnEnviar
 id btnEnviarReserva
+id btnEventos
 id btnMapaInteres
 id btnPerfil
 id btnSubirFoto
@@ -1321,6 +1323,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imgview
 id info
 id invisible
 id italic
