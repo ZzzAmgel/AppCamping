@@ -1245,6 +1245,7 @@ id btnEnviarReserva
 id btnEventos
 id btnMapaInteres
 id btnPerfil
+id btnSendFoto
 id btnSubirFoto
 id btnSubirImagen
 id btnVerificar
@@ -1323,6 +1324,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imgPreview
 id imgview
 id info
 id invisible
