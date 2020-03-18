@@ -63,21 +63,18 @@ public class MainActivity extends AppCompatActivity {
                 correo = vCorreo.getText().toString();
                 cpassword = vCPassword.getText().toString();
 
-                if(!nombre.isEmpty() && !password.isEmpty() && !correo.isEmpty()){
+
+                if(!nombre.isEmpty() && !password.isEmpty() && !correo.isEmpty() /*&& vPassword.equals(vCPassword)*/){
                     if(password.length() >= 6) {
-                        if(vCPassword != vCPassword){
-                            Toast.makeText(MainActivity.this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
-                        }
-                        else {
+
                             registerUser();
-                        }
                     }
                     else {
-                        Toast.makeText(MainActivity.this, "La contraseña debe tener al menos 6 dígitos y estar igual", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "La contraseña debe tener al menos 6 dígitos y ser igual", Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "Alguno de los campos esta vacio", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Alguno de los campos esta vacio"+vPassword+vCPassword, Toast.LENGTH_SHORT).show();
                 }
 
             }
