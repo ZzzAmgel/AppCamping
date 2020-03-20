@@ -28,18 +28,17 @@ public class InformacionActivity extends AppCompatActivity {
     private final static String CHANNEL_ID = "NOTIFICACION";
     private final static int NOTIFICACION_ID = 0;
     FirebaseAuth vAuth;
-    private Button btnEnviarNotificacion;
-    private PendingIntent pendingIntent;
+
 
     //PUBLICAR RESERVA BDRTB
-    private StorageReference mStorageRef;
+
     private DatabaseReference mDatabaseReserva;
-    private Button EnviarReserva;
     private EditText mNombreApellidos;
     private EditText mNumAdultos;
     private EditText mNumNinos;
     private EditText mFechaIn;
     private EditText mFechaFin;
+    private EditText mNumTelefono;
 
     TextView markertxt;
 
@@ -59,10 +58,11 @@ public class InformacionActivity extends AppCompatActivity {
         mNumAdultos = (EditText) findViewById(R.id.editAdultos);
         mNumNinos = (EditText) findViewById(R.id.editNinos);
         mFechaIn = (EditText) findViewById(R.id.editFechaIn);
-        mFechaFin = (EditText) findViewById(R.id.editFechaFin);
+        mFechaFin = (EditText) findViewById(R.id.editFechaSalida);
+        mNumTelefono = (EditText) findViewById(R.id.editTelefonoMovil);
 
         mDatabaseReserva = FirebaseDatabase.getInstance().getReference();
-        EnviarReserva = findViewById(R.id.btnEnviar);
+        //EnviarReserva = findViewById(R.id.btnEnviar);
 
 
     }
@@ -82,6 +82,7 @@ public class InformacionActivity extends AppCompatActivity {
                 String numninos = mNumNinos.getText().toString();
                 String fechainicio = mFechaIn.getText().toString();
                 String fechafin = mFechaFin.getText().toString();
+                String numerotelefono = mNumTelefono.getText().toString();
                 String casa = markertxt.getText().toString();
                 String direccioncorreo = vAuth.getCurrentUser().getEmail();
 
@@ -92,6 +93,7 @@ public class InformacionActivity extends AppCompatActivity {
                 mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("NumNinos").setValue(numninos);
                 mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("FechaInicio").setValue(fechainicio);
                 mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("FechaFin").setValue(fechafin);
+                mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("NumeroTelefono").setValue(numerotelefono);
                 mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("Casa").setValue(casa);
             }
 
@@ -108,7 +110,7 @@ public class InformacionActivity extends AppCompatActivity {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID);
         builder.setSmallIcon(R.drawable.rioruralicon);
         builder.setContentTitle("Se ha realizado una reserva:");
-        builder.setContentText("En breve recibirá una confirmación");
+        builder.setContentText("En breve recibirá una confirmación, sus datos son:"+mNombreApellidos+mNumTelefono+mFechaIn+mFechaFin+mNumAdultos+mNumNinos);
         builder.setColor(Color.BLUE);
         builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
         builder.setLights(Color.GREEN, 1000, 1000);

@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 cpassword = vCPassword.getText().toString();
 
 
-                if(!nombre.isEmpty() && !password.isEmpty() && !correo.isEmpty() /*&& vPassword.equals(vCPassword)*/){
+                if(!nombre.isEmpty() && !password.isEmpty() && !correo.isEmpty() && password.equals(cpassword)){
                     if(password.length() >= 6) {
 
                             registerUser();
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "Alguno de los campos esta vacio"+vPassword+vCPassword, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Alguno de los campos esta vacio o no coinciden las contraseñas", Toast.LENGTH_SHORT).show();
                 }
 
             }
