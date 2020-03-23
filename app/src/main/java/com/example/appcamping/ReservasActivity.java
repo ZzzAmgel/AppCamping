@@ -1,5 +1,6 @@
 package com.example.appcamping;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -7,10 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -19,6 +24,7 @@ import java.util.Date;
 public class ReservasActivity extends AppCompatActivity {
 
     FirebaseAuth vAuth;
+    private DatabaseReference mDatabase;
     private DatabaseReference mDatabaseReserva;
     private Button EnviarReserva;
     private EditText mNombreApellidos;
@@ -28,6 +34,11 @@ public class ReservasActivity extends AppCompatActivity {
     private EditText mFechaFin;
     private EditText mNumTelefono;
     private EditText mDNI;
+
+    //COGER FECHAS
+
+    private String valid_until;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,38 +51,65 @@ public class ReservasActivity extends AppCompatActivity {
         View c = findViewById(R.id.textParcelas);
         c.setVisibility(View.GONE);
 
+        View I = findViewById(R.id.textParcelas);
+        I.setVisibility(View.GONE);
+
+        //-----------------------------COGER FECHA
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDatabase.child("Fechas").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()){
+                    valid_until = dataSnapshot.child("FechaTempAlta").getValue().toString();
+
+                    SimpleDateFormat sdfBaja = new SimpleDateFormat("dd/MM/yyyy");
+                    //SimpleDateFormat sdfAlta = new SimpleDateFormat("dd/MM/yyyy");
+                    Date strTemporadaBaja = null;
+                    //Date strTemporadaAlta = null;
+                    try {
+                        strTemporadaBaja = sdfBaja.parse(valid_until);
+                        //strTemporadaAlta = sdfAlta.parse(valido_alta);
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                    if (new Date().before(strTemporadaBaja)) {
+                        View j = findViewById(R.id.textInfoCasa);
+                        j.setVisibility(View.GONE);
+
+                        View l = findViewById(R.id.textInfoParcela);
+                        l.setVisibility(View.VISIBLE);
+                    }
+                    else if (new Date().after(strTemporadaBaja)) {
+
+
+                        View n = findViewById(R.id.textInfoParcela);
+                        n.setVisibility(View.GONE);
+
+                        View m = findViewById(R.id.textInfoCasa);
+                        m.setVisibility(View.VISIBLE);
+
+
+
+                        //------------------- ON CREATE SUBIR BDRTB --------------------
+                    }
+
+                    //Toast.makeText(ReservasActivity.this, ""+mFecha1, Toast.LENGTH_SHORT).show();
+                }
+            }
+
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+
+        });
+
+
         //-----------------------------COMPROBAR FECHAS Y OCULTAR O MOSTRAR
-        String valid_until = "20/02/2020";
-        String valido_alta = "20/03/2020";
-        SimpleDateFormat sdfBaja = new SimpleDateFormat("dd/MM/yyyy");
-        SimpleDateFormat sdfAlta = new SimpleDateFormat("dd/MM/yyyy");
-        Date strTemporadaBaja = null;
-        Date strTemporadaAlta = null;
-        try {
-            strTemporadaBaja = sdfBaja.parse(valid_until);
-            strTemporadaAlta = sdfAlta.parse(valido_alta);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        if (new Date().before(strTemporadaBaja)) {
-            View j = findViewById(R.id.textInfoCasa);
-            j.setVisibility(View.GONE);
-
-            View l = findViewById(R.id.textParcelas);
-            l.setVisibility(View.VISIBLE);
-        }
-        else if (new Date().after(strTemporadaAlta)){
-
-            View k = findViewById(R.id.textParcelas);
-            k.setVisibility(View.GONE);
-
-            View n = findViewById(R.id.textInfoParcela);
-            n.setVisibility(View.GONE);
-
-            View m = findViewById(R.id.textInfoCasa);
-            m.setVisibility(View.VISIBLE);
-
-            //------------------- ON CREATE SUBIR BDRTB --------------------
+        //String valid_until = "24/03/2020";
+        //String valido_alta = "20/03/2020";
 
             vAuth = FirebaseAuth.getInstance();
 
@@ -87,7 +125,7 @@ public class ReservasActivity extends AppCompatActivity {
             EnviarReserva = findViewById(R.id.btnEnviarDatosReserva);
 
 
-        }
+
 
 
         //-----------------------------FIN COMPROBAR FECHAS Y OCULTAR O MOSTRAR

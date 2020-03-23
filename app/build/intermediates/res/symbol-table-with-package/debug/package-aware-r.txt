@@ -1311,7 +1311,6 @@ id editNumAdultos
 id editNumNinos
 id editPassword
 id editTelefonoMovil
-id editTemBaja
 id editTempAlta
 id editTitulo
 id edit_query
@@ -1446,7 +1445,6 @@ id terrain
 id text
 id text2
 id textFechaAlta
-id textFechaBaja
 id textInfoCasa
 id textInfoParcela
 id textInformación
@@ -1550,6 +1548,7 @@ layout activity_login
 layout activity_main
 layout activity_maps
 layout activity_maps_interes
+layout activity_mostar_eventos
 layout activity_perfil
 layout activity_recuperar
 layout activity_registro

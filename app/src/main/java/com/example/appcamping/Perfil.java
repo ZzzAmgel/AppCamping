@@ -13,6 +13,7 @@ import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -40,9 +41,14 @@ public class Perfil extends AppCompatActivity {
     public Uri imguri;
     Button ch,up;
     ImageView img;
+    TextView correovisible;
+
     //private Button mStoragebtn;
     //private StorageReference mStorage;
     private StorageReference mStorageRef;
+    private String emailuser;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,10 +57,13 @@ public class Perfil extends AppCompatActivity {
 
         View b = findViewById(R.id.btnConfirmarSubida);
         b.setVisibility(View.GONE);
-
         mStorageRef = FirebaseStorage.getInstance().getReference("fotos");
-
         vAuth = FirebaseAuth.getInstance();
+
+        emailuser = vAuth.getCurrentUser().getEmail();
+        correovisible=(TextView) findViewById(R.id.textView3);
+        correovisible.setText(emailuser);
+
         ch=(Button)findViewById(R.id.btnSubirImagen);
         up=(Button)findViewById(R.id.btnConfirmarSubida);
         img=(ImageView)findViewById(R.id.imgview);
@@ -72,6 +81,8 @@ public class Perfil extends AppCompatActivity {
                 Fileuploader();
             }
         });
+
+
     }
     private String getExtension(Uri uri){
         ContentResolver cr=getContentResolver();

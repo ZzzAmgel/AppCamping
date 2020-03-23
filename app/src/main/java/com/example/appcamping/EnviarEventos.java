@@ -104,9 +104,9 @@ public class EnviarEventos extends AppCompatActivity {
                 String descripcion = mEditTextMensaje.getText().toString();
                 String fecha = mFecha.getText().toString();
 
-                mDatabase.child("Eventos").child(key).child("Publicacion").child("Titulo").setValue(titulo);
-                mDatabase.child("Eventos").child(key).child("Publicacion").child("Descripción").setValue(descripcion);
-                mDatabase.child("Eventos").child(key).child("Publicacion").child("Fecha").setValue(fecha);
+                mDatabase.child("Eventos").child(key).child("Titulo").setValue(titulo);
+                mDatabase.child("Eventos").child(key).child("Descripción").setValue(descripcion);
+                mDatabase.child("Eventos").child(key).child("Fecha").setValue(fecha);
             }
         });
 

@@ -68,4 +68,9 @@ public class IniciadoActivity extends AppCompatActivity {
         Intent mapainteres = new Intent(IniciadoActivity.this, MapsInteresActivity.class);
         startActivity(mapainteres);
     }
+
+    public void EventosLink(View view){
+        Intent eventoslink = new Intent(IniciadoActivity.this, MostarEventosActivity.class);
+        startActivity(eventoslink);
+    }
 }
