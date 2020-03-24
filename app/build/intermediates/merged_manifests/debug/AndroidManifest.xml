@@ -37,6 +37,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.appcamping.ShowData" />
         <activity android:name="com.example.appcamping.MostarEventosActivity" />
         <activity android:name="com.example.appcamping.Gestion.AccionesAdminActivity" />
         <activity android:name="com.example.appcamping.Gestion.AddFechasTemporada" />

@@ -50,6 +50,7 @@ public class EnviarEventos extends AppCompatActivity {
     private EditText mEditTextTitulo;
     private EditText mEditTextMensaje;
     private EditText mFecha;
+    private EditText mUrl;
     private DatabaseReference mDatabase;
     private Button EnviarRTB;
 
@@ -92,6 +93,7 @@ public class EnviarEventos extends AppCompatActivity {
         mEditTextTitulo = (EditText) findViewById(R.id.editTitulo);
         mEditTextMensaje = (EditText) findViewById(R.id.editDescripcion);
         mFecha = (EditText) findViewById(R.id.editFecha);
+        mUrl = (EditText) findViewById(R.id.editUrl);
         mDatabase = FirebaseDatabase.getInstance().getReference();
         EnviarRTB = findViewById(R.id.btnEnviar);
         EnviarRTB.setOnClickListener(new View.OnClickListener(){
@@ -103,10 +105,12 @@ public class EnviarEventos extends AppCompatActivity {
                 String titulo = mEditTextTitulo.getText().toString();
                 String descripcion = mEditTextMensaje.getText().toString();
                 String fecha = mFecha.getText().toString();
+                String URLlink = mUrl.getText().toString();
 
                 mDatabase.child("Eventos").child(key).child("Titulo").setValue(titulo);
-                mDatabase.child("Eventos").child(key).child("Descripción").setValue(descripcion);
+                mDatabase.child("Eventos").child(key).child("Descripcion").setValue(descripcion);
                 mDatabase.child("Eventos").child(key).child("Fecha").setValue(fecha);
+                mDatabase.child("Eventos").child(key).child("URL").setValue(URLlink);
             }
         });
 

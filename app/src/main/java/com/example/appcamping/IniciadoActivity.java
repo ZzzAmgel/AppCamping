@@ -70,7 +70,7 @@ public class IniciadoActivity extends AppCompatActivity {
     }
 
     public void EventosLink(View view){
-        Intent eventoslink = new Intent(IniciadoActivity.this, MostarEventosActivity.class);
+        Intent eventoslink = new Intent(IniciadoActivity.this, ShowData.class);
         startActivity(eventoslink);
     }
 }
