@@ -33,4 +33,9 @@ public class AccionesAdminActivity extends AppCompatActivity {
         Intent volverinicio = new Intent(AccionesAdminActivity.this, IniciadoActivity.class);
         startActivity(volverinicio);
     }
+
+    public void GestionGastos(View view) {
+        Intent gestiongastos = new Intent(AccionesAdminActivity.this, EnviarMostrarGastos.class);
+        startActivity(gestiongastos);
+    }
 }
