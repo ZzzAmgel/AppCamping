@@ -4,14 +4,16 @@ public class Eventos {
     String Titulo;
     String Descripcion;
     String Fecha;
+    String URL;
     public Eventos(){
 
     }
 
-    public Eventos(String titulo, String descripcion, String fecha){
+    public Eventos(String titulo, String descripcion, String fecha, String url){
         Titulo = titulo;
         Descripcion = descripcion;
         Fecha = fecha;
+        URL = url;
     }
 
     public String getTitulo() {
@@ -36,6 +38,14 @@ public class Eventos {
 
     public void setFecha(String fecha) {
         Fecha = fecha;
+    }
+
+    public String getURL() {
+        return URL;
+    }
+
+    public void setURL(String URL) {
+        this.URL = URL;
     }
     public String toString(){
         return Titulo + "\n" + Descripcion + "\n" + Fecha;

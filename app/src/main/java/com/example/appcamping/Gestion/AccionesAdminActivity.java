@@ -38,4 +38,9 @@ public class AccionesAdminActivity extends AppCompatActivity {
         Intent gestiongastos = new Intent(AccionesAdminActivity.this, EnviarMostrarGastos.class);
         startActivity(gestiongastos);
     }
+
+    public void GestionReservas(View view) {
+        Intent gestionreservas = new Intent(AccionesAdminActivity.this, MostrarReservas.class);
+        startActivity(gestionreservas);
+    }
 }

@@ -87,14 +87,14 @@ public class InformacionActivity extends AppCompatActivity {
                 String direccioncorreo = vAuth.getCurrentUser().getEmail();
 
 
-                mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("Titulo").setValue(nombre);
-                mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("Correo").setValue(direccioncorreo);
-                mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("NumAdultos").setValue(numadultos);
-                mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("NumNinos").setValue(numninos);
-                mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("FechaInicio").setValue(fechainicio);
-                mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("FechaFin").setValue(fechafin);
-                mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("NumeroTelefono").setValue(numerotelefono);
-                mDatabaseReserva.child("Reservas").child(ky).child("Reserva").child("Casa").setValue(casa);
+                mDatabaseReserva.child("Reservas").child(ky).child("Titulo").setValue(nombre);
+                mDatabaseReserva.child("Reservas").child(ky).child("Correo").setValue(direccioncorreo);
+                mDatabaseReserva.child("Reservas").child(ky).child("NumAdultos").setValue(numadultos);
+                mDatabaseReserva.child("Reservas").child(ky).child("NumNinos").setValue(numninos);
+                mDatabaseReserva.child("Reservas").child(ky).child("FechaInicio").setValue(fechainicio);
+                mDatabaseReserva.child("Reservas").child(ky).child("FechaFin").setValue(fechafin);
+                mDatabaseReserva.child("Reservas").child(ky).child("NumeroTelefono").setValue(numerotelefono);
+                mDatabaseReserva.child("Reservas").child(ky).child("Casa").setValue(casa);
             }
 
     private void createNotificationChannel(){

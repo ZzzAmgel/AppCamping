@@ -28,12 +28,20 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_mostrar_reservas.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_mostrar_reservas.xml"
+    },
+    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_evento_view.xml.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\evento_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_contacto.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_contacto.xml"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",

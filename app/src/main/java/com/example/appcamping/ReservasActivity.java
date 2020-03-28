@@ -34,6 +34,7 @@ public class ReservasActivity extends AppCompatActivity {
     private EditText mFechaFin;
     private EditText mNumTelefono;
     private EditText mDNI;
+    private String mCasa;
 
     //COGER FECHAS
 
@@ -128,6 +129,7 @@ public class ReservasActivity extends AppCompatActivity {
 
 
 
+
         //-----------------------------FIN COMPROBAR FECHAS Y OCULTAR O MOSTRAR
     }
 
@@ -152,6 +154,9 @@ public class ReservasActivity extends AppCompatActivity {
 
         View e = findViewById(R.id.textParcelas);
         e.setVisibility(View.VISIBLE);
+        String Casa1 = "Parcela";
+
+        mCasa = Casa1;
 
     }
 
@@ -172,6 +177,10 @@ public class ReservasActivity extends AppCompatActivity {
         View e = findViewById(R.id.textParcelas);
         e.setVisibility(View.GONE);
 
+        String Casa2 = "Casa";
+
+        mCasa = Casa2;
+
     }
 
     public void EnviarReserva(View view){
@@ -185,15 +194,17 @@ public class ReservasActivity extends AppCompatActivity {
         String numerotelefono = mNumTelefono.getText().toString();
         String direccioncorreo = vAuth.getCurrentUser().getEmail();
         String dni = mDNI.getText().toString();
+        String Casa = mCasa;
 
-        mDatabaseReserva.child("Reservas").child(clave).child("Reserva").child("Titulo").setValue(nombre);
-        mDatabaseReserva.child("Reservas").child(clave).child("Reserva").child("Correo").setValue(direccioncorreo);
-        mDatabaseReserva.child("Reservas").child(clave).child("Reserva").child("DNI").setValue(dni);
-        mDatabaseReserva.child("Reservas").child(clave).child("Reserva").child("NumAdultos").setValue(numadultos);
-        mDatabaseReserva.child("Reservas").child(clave).child("Reserva").child("NumNinos").setValue(numninos);
-        mDatabaseReserva.child("Reservas").child(clave).child("Reserva").child("FechaInicio").setValue(fechainicio);
-        mDatabaseReserva.child("Reservas").child(clave).child("Reserva").child("FechaFin").setValue(fechafin);
-        mDatabaseReserva.child("Reservas").child(clave).child("Reserva").child("NumeroTelefono").setValue(numerotelefono);
+        mDatabaseReserva.child("Reservas").child(clave).child("Titulo").setValue(nombre);
+        mDatabaseReserva.child("Reservas").child(clave).child("Correo").setValue(direccioncorreo);
+        mDatabaseReserva.child("Reservas").child(clave).child("DNI").setValue(dni);
+        mDatabaseReserva.child("Reservas").child(clave).child("NumAdultos").setValue(numadultos);
+        mDatabaseReserva.child("Reservas").child(clave).child("NumNinos").setValue(numninos);
+        mDatabaseReserva.child("Reservas").child(clave).child("FechaInicio").setValue(fechainicio);
+        mDatabaseReserva.child("Reservas").child(clave).child("FechaFin").setValue(fechafin);
+        mDatabaseReserva.child("Reservas").child(clave).child("NumeroTelefono").setValue(numerotelefono);
+        mDatabaseReserva.child("Reservas").child(clave).child("Casa").setValue(Casa);
 
     }
 

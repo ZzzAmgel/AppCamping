@@ -13,7 +13,9 @@
          location permissions for the 'MyLocation' functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
@@ -37,9 +39,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.appcamping.ContactoActivity" />
+        <activity android:name="com.example.appcamping.Gestion.MostrarReservas" />
         <activity android:name="com.example.appcamping.Gestion.EnviarMostrarGastos" />
         <activity android:name="com.example.appcamping.ShowData" />
-        <activity android:name="com.example.appcamping.MostarEventosActivity" />
         <activity android:name="com.example.appcamping.Gestion.AccionesAdminActivity" />
         <activity android:name="com.example.appcamping.Gestion.AddFechasTemporada" />
         <activity android:name="com.example.appcamping.ReservasActivity" />

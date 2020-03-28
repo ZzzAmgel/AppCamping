@@ -3,7 +3,6 @@ package com.example.appcamping.Gestion;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -13,19 +12,16 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import com.example.appcamping.R;
-import com.example.appcamping.adapters.MensajeAdapter;
-import com.example.appcamping.models.Eventos;
 import com.example.appcamping.models.Gastos;
-import com.example.appcamping.models.Mensaje;
 import com.example.appcamping.models.Module2;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 
 public class EnviarMostrarGastos extends AppCompatActivity {
@@ -76,6 +72,7 @@ public class EnviarMostrarGastos extends AppCompatActivity {
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 String value=dataSnapshot.getValue(Gastos.class).toString();
                 arrayList.add(value);
+                Collections.reverse(arrayList);
                 arrayAdapter.notifyDataSetChanged();
             }
 

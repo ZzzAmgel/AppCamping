@@ -73,4 +73,14 @@ public class IniciadoActivity extends AppCompatActivity {
         Intent eventoslink = new Intent(IniciadoActivity.this, ShowData.class);
         startActivity(eventoslink);
     }
+
+    public void GaleriaLink(View view){
+        //Intent galerialink = new Intent(IniciadoActivity.this, Galeria.class);
+        //startActivity(galerialink);
+    }
+
+    public void ContactarLink(View view){
+        Intent contactarlink = new Intent(IniciadoActivity.this, ContactoActivity.class);
+        startActivity(contactarlink);
+    }
 }
