@@ -1,5 +1,7 @@
 package com.example.appcamping.models;
 
+import android.widget.ImageView;
+
 public class Eventos {
     String Titulo;
     String Descripcion;
@@ -47,9 +49,11 @@ public class Eventos {
     public void setURL(String URL) {
         this.URL = URL;
     }
+
     public String toString(){
-        return Titulo + "\n" + Descripcion + "\n" + Fecha;
+        return Titulo + "\n" + Descripcion + "\n" + Fecha + "\n" + URL;
     }
+
 
 
 }

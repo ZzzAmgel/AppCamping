@@ -80,8 +80,16 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_enviar_eventos.xml"
     },
     {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_image_item.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\image_item.xml"
+    },
+    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_images.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_images.xml"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
@@ -120,8 +128,16 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_stat_ic_notification.png"
     },
     {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_send_eventos.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_send_eventos.xml"
+    },
+    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps_interes.xml.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_maps_interes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_send_images.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_send_images.xml"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_stat_ic_notification.png.flat",
@@ -130,6 +146,10 @@
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_enviar_mostrar_gastos.xml.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_enviar_mostrar_gastos.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_images1.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_images1.xml"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_informacion.xml.flat",

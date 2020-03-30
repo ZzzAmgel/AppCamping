@@ -8,6 +8,7 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -15,8 +16,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.StorageReference;
@@ -74,27 +77,37 @@ public class InformacionActivity extends AppCompatActivity {
 
     public void EnviarReserva(View view){
 
-                createNotificationChannel();
-                crearNotificacion();
-                String ky = mDatabaseReserva.child("Reservas").push().getKey();
-                String nombre = mNombreApellidos.getText().toString();
-                String numadultos = mNumAdultos.getText().toString();
-                String numninos = mNumNinos.getText().toString();
-                String fechainicio = mFechaIn.getText().toString();
-                String fechafin = mFechaFin.getText().toString();
-                String numerotelefono = mNumTelefono.getText().toString();
-                String casa = markertxt.getText().toString();
-                String direccioncorreo = vAuth.getCurrentUser().getEmail();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        boolean emailVerified = user.isEmailVerified();
+        if(emailVerified == false) {
+            Toast.makeText(this, "Debe verificar su dirección de correo electrónico para poder reservar", Toast.LENGTH_SHORT).show();
+            Intent redireccionperfil = new Intent(InformacionActivity.this, Perfil.class);
+            startActivity(redireccionperfil);
+        }
+        else {
+
+            createNotificationChannel();
+            crearNotificacion();
+            String ky = mDatabaseReserva.child("Reservas").push().getKey();
+            String nombre = mNombreApellidos.getText().toString();
+            String numadultos = mNumAdultos.getText().toString();
+            String numninos = mNumNinos.getText().toString();
+            String fechainicio = mFechaIn.getText().toString();
+            String fechafin = mFechaFin.getText().toString();
+            String numerotelefono = mNumTelefono.getText().toString();
+            String casa = markertxt.getText().toString();
+            String direccioncorreo = vAuth.getCurrentUser().getEmail();
 
 
-                mDatabaseReserva.child("Reservas").child(ky).child("Titulo").setValue(nombre);
-                mDatabaseReserva.child("Reservas").child(ky).child("Correo").setValue(direccioncorreo);
-                mDatabaseReserva.child("Reservas").child(ky).child("NumAdultos").setValue(numadultos);
-                mDatabaseReserva.child("Reservas").child(ky).child("NumNinos").setValue(numninos);
-                mDatabaseReserva.child("Reservas").child(ky).child("FechaInicio").setValue(fechainicio);
-                mDatabaseReserva.child("Reservas").child(ky).child("FechaFin").setValue(fechafin);
-                mDatabaseReserva.child("Reservas").child(ky).child("NumeroTelefono").setValue(numerotelefono);
-                mDatabaseReserva.child("Reservas").child(ky).child("Casa").setValue(casa);
+            mDatabaseReserva.child("Reservas").child(ky).child("Titulo").setValue(nombre);
+            mDatabaseReserva.child("Reservas").child(ky).child("Correo").setValue(direccioncorreo);
+            mDatabaseReserva.child("Reservas").child(ky).child("NumAdultos").setValue(numadultos);
+            mDatabaseReserva.child("Reservas").child(ky).child("NumNinos").setValue(numninos);
+            mDatabaseReserva.child("Reservas").child(ky).child("FechaInicio").setValue(fechainicio);
+            mDatabaseReserva.child("Reservas").child(ky).child("FechaFin").setValue(fechafin);
+            mDatabaseReserva.child("Reservas").child(ky).child("NumeroTelefono").setValue(numerotelefono);
+            mDatabaseReserva.child("Reservas").child(ky).child("Casa").setValue(casa);
+                }
             }
 
     private void createNotificationChannel(){

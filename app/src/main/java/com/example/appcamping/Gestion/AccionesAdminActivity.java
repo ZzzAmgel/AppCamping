@@ -25,7 +25,7 @@ public class AccionesAdminActivity extends AppCompatActivity {
     }
 
     public void EnviarEventosAdmin(View view) {
-        Intent enviareventos = new Intent(AccionesAdminActivity.this, EnviarEventos.class);
+        Intent enviareventos = new Intent(AccionesAdminActivity.this, SendEventos.class);
         startActivity(enviareventos);
     }
 
@@ -42,5 +42,9 @@ public class AccionesAdminActivity extends AppCompatActivity {
     public void GestionReservas(View view) {
         Intent gestionreservas = new Intent(AccionesAdminActivity.this, MostrarReservas.class);
         startActivity(gestionreservas);
+    }
+    public void SendImages(View view){
+        Intent sendimages = new Intent(AccionesAdminActivity.this, SendImages.class);
+        startActivity(sendimages);
     }
 }

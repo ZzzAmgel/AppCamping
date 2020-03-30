@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -41,10 +42,12 @@ public class ReservasActivity extends AppCompatActivity {
     private String valid_until;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservas);
+
 
         View a = findViewById(R.id.btnShowCasa);
         a.setVisibility(View.GONE);
@@ -185,26 +188,37 @@ public class ReservasActivity extends AppCompatActivity {
 
     public void EnviarReserva(View view){
 
-        String clave = mDatabaseReserva.child("Reservas").push().getKey();
-        String nombre = mNombreApellidos.getText().toString();
-        String numadultos = mNumAdultos.getText().toString();
-        String numninos = mNumNinos.getText().toString();
-        String fechainicio = mFechaIn.getText().toString();
-        String fechafin = mFechaFin.getText().toString();
-        String numerotelefono = mNumTelefono.getText().toString();
-        String direccioncorreo = vAuth.getCurrentUser().getEmail();
-        String dni = mDNI.getText().toString();
-        String Casa = mCasa;
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        boolean emailVerified = user.isEmailVerified();
+        if(emailVerified == false) {
+            Toast.makeText(this, "Debe verificar su dirección de correo electrónico para poder reservar"+emailVerified, Toast.LENGTH_SHORT).show();
+            Intent redireccionperfil = new Intent(ReservasActivity.this, Perfil.class);
+            startActivity(redireccionperfil);
+        }
+        else {
 
-        mDatabaseReserva.child("Reservas").child(clave).child("Titulo").setValue(nombre);
-        mDatabaseReserva.child("Reservas").child(clave).child("Correo").setValue(direccioncorreo);
-        mDatabaseReserva.child("Reservas").child(clave).child("DNI").setValue(dni);
-        mDatabaseReserva.child("Reservas").child(clave).child("NumAdultos").setValue(numadultos);
-        mDatabaseReserva.child("Reservas").child(clave).child("NumNinos").setValue(numninos);
-        mDatabaseReserva.child("Reservas").child(clave).child("FechaInicio").setValue(fechainicio);
-        mDatabaseReserva.child("Reservas").child(clave).child("FechaFin").setValue(fechafin);
-        mDatabaseReserva.child("Reservas").child(clave).child("NumeroTelefono").setValue(numerotelefono);
-        mDatabaseReserva.child("Reservas").child(clave).child("Casa").setValue(Casa);
+
+            String clave = mDatabaseReserva.child("Reservas").push().getKey();
+            String nombre = mNombreApellidos.getText().toString();
+            String numadultos = mNumAdultos.getText().toString();
+            String numninos = mNumNinos.getText().toString();
+            String fechainicio = mFechaIn.getText().toString();
+            String fechafin = mFechaFin.getText().toString();
+            String numerotelefono = mNumTelefono.getText().toString();
+            String direccioncorreo = vAuth.getCurrentUser().getEmail();
+            String dni = mDNI.getText().toString();
+            String Casa = mCasa;
+
+            mDatabaseReserva.child("Reservas").child(clave).child("Titulo").setValue(nombre);
+            mDatabaseReserva.child("Reservas").child(clave).child("Correo").setValue(direccioncorreo);
+            mDatabaseReserva.child("Reservas").child(clave).child("DNI").setValue(dni);
+            mDatabaseReserva.child("Reservas").child(clave).child("NumAdultos").setValue(numadultos);
+            mDatabaseReserva.child("Reservas").child(clave).child("NumNinos").setValue(numninos);
+            mDatabaseReserva.child("Reservas").child(clave).child("FechaInicio").setValue(fechainicio);
+            mDatabaseReserva.child("Reservas").child(clave).child("FechaFin").setValue(fechafin);
+            mDatabaseReserva.child("Reservas").child(clave).child("NumeroTelefono").setValue(numerotelefono);
+            mDatabaseReserva.child("Reservas").child(clave).child("Casa").setValue(Casa);
+        }
 
     }
 

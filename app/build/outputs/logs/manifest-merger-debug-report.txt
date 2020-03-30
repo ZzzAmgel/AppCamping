@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-81:12
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-85:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\db7b73e6a038ea6fc17d2b8f0e9b33e8\navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ef47903584e132f95c08c23292cec68e\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\72755d8593c3ca1ed00b11907b10c688\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -13,12 +13,14 @@ MERGED from [com.google.firebase:firebase-auth:18.0.0] C:\Users\Angel\.gradle\ca
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a338e28c1209b740a06a2ceec88dbe5c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ab35e7679e6b5a6acba06e393419f040\jetified-firebase-database-18.0.0\AndroidManifest.xml:15:1-36:12
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ee402462607e3d7bc40e1166a58a6978\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4c337964d88492ed88df2a69a6db76ad\jetified-play-services-maps-16.1.0\AndroidManifest.xml:17:1-38:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\80b69e0281975f7e9accaab0f9198800\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\c3e720a7a4bccfa380f94eaf2ad1ae59\navigation-fragment-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\0a6c212f73963fa6835af45599dfab1e\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4cbae47e0dfb13cf34042c0d9c52f313\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:17:1-37:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\28cd2d5eed3942b63c9ca980fe4dda23\jetified-play-services-flags-17.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\92a9eed7bec865418cbf603ac380e877\jetified-firebase-auth-interop-18.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\724232c7699e1aa48da05711ba9209f1\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:2:1-7:12
@@ -65,6 +67,7 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Angel\.gradle\caches\tra
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\dcf4af4213d59bd5fe489359c2b51b96\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e5f4ab83b7154d8dd7689c213d4008f9\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\3ad98f043f0e278e1b4f445317842885\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\448ad5636d84a77758d1f5390643618a\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\69ad70deb7fc3872e7a51cd7de424a87\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\6ab1828441a6b45d05a01b9241ca901a\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\6dd4de7fc3225e55d58846adf9ecb0a7\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -75,20 +78,22 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Angel\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\058a364b06d9011467e5efaaa1ab266f\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ffd0aa10f2a787335b333d5b793ff3d9\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\d619de1e9e20a12a3fda730585e012a7\jetified-firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-81:12
+MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\9b6fcc30da8d4d18e3efe61e9ccf3b58\jetified-protolite-well-known-types-17.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\d10c1748f6272b90f813c777e522a0f6\jetified-grpc-android-1.21.0\AndroidManifest.xml:2:1-13:12
+INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-85:12
 	package
 		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-81:12
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-85:12
 		INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-81:12
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:1-85:12
 		INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:2:11-69
@@ -106,6 +111,8 @@ MERGED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradl
 MERGED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ab35e7679e6b5a6acba06e393419f040\jetified-firebase-database-18.0.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:14:5-67
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4c337964d88492ed88df2a69a6db76ad\jetified-play-services-maps-16.1.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4c337964d88492ed88df2a69a6db76ad\jetified-play-services-maps-16.1.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\86099965e0825156c26d8ace6673dd46\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:22:5-67
@@ -125,7 +132,7 @@ ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:12:22-77
 application
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:14:5-79:19
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:14:5-83:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ef47903584e132f95c08c23292cec68e\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ef47903584e132f95c08c23292cec68e\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\65c09879886c04dd03c37ecd65c89ae1\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -140,12 +147,16 @@ MERGED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradl
 MERGED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ab35e7679e6b5a6acba06e393419f040\jetified-firebase-database-18.0.0\AndroidManifest.xml:28:5-34:19
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:29:5-35:19
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:29:5-35:19
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4c337964d88492ed88df2a69a6db76ad\jetified-play-services-maps-16.1.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4c337964d88492ed88df2a69a6db76ad\jetified-play-services-maps-16.1.0\AndroidManifest.xml:30:5-36:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\0a6c212f73963fa6835af45599dfab1e\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\0a6c212f73963fa6835af45599dfab1e\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4cbae47e0dfb13cf34042c0d9c52f313\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:22:5-35:19
 MERGED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4cbae47e0dfb13cf34042c0d9c52f313\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:22:5-35:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\92a9eed7bec865418cbf603ac380e877\jetified-firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\92a9eed7bec865418cbf603ac380e877\jetified-firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-analytics:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\90cbb37c36ee41a7c20b386b8ab14803\jetified-firebase-analytics-17.0.0\AndroidManifest.xml:7:5-20
@@ -200,124 +211,140 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Angel\.gradle\
 		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
 		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:20:9-40
+activity#com.example.appcamping.ImagesActivity1
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:21:9-62
+	android:name
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:21:19-50
+activity#com.example.appcamping.Gestion.SendImages
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:22:9-56
+	android:name
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:22:19-53
+activity#com.example.appcamping.ImagesActivity
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:23:9-52
+	android:name
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:23:19-49
+activity#com.example.appcamping.Gestion.SendEventos
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:24:9-57
+	android:name
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:24:19-54
 activity#com.example.appcamping.ContactoActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:21:9-63
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:25:9-54
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:21:19-51
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:25:19-51
 activity#com.example.appcamping.Gestion.MostrarReservas
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:22:9-61
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:26:9-61
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:22:19-58
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:26:19-58
 activity#com.example.appcamping.Gestion.EnviarMostrarGastos
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:23:9-65
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:27:9-65
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:23:19-62
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:27:19-62
 activity#com.example.appcamping.ShowData
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:24:9-46
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:28:9-46
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:24:19-43
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:28:19-43
 activity#com.example.appcamping.Gestion.AccionesAdminActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:25:9-67
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:29:9-67
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:25:19-64
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:29:19-64
 activity#com.example.appcamping.Gestion.AddFechasTemporada
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:26:9-64
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:30:9-64
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:26:19-61
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:30:19-61
 activity#com.example.appcamping.ReservasActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:27:9-54
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:31:9-54
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:27:19-51
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:31:19-51
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:36:9-38:55
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:40:9-42:55
 	android:value
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:38:13-52
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:42:13-52
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:37:13-58
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:41:13-58
 activity#com.example.appcamping.MapsInteresActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:40:9-42:67
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:44:9-46:67
 	android:label
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:42:13-64
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:46:13-64
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:41:13-48
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:45:13-48
 activity#com.example.appcamping.EnviarEventos
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:43:9-51
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:47:9-51
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:43:19-48
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:47:19-48
 activity#com.example.appcamping.Perfil
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:44:9-44
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:48:9-44
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:44:19-41
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:48:19-41
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:46:9-48:68
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:50:9-52:68
 	android:resource
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:48:13-65
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:52:13-65
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:47:13-83
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:51:13-83
 meta-data#com.google.firebase.messaging.default_notification_color
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:49:9-51:67
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:53:9-55:67
 	android:resource
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:51:13-64
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:55:13-64
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:50:13-84
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:54:13-84
 meta-data#com.google.firebase.messaing.default_notification_channel_id
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:52:9-54:71
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:56:9-58:71
 	android:value
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:54:13-68
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:58:13-68
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:53:13-88
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:57:13-88
 activity#com.example.appcamping.MapsActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:56:9-58:59
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:60:9-62:59
 	android:label
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:58:13-56
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:62:13-56
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:57:13-41
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:61:13-41
 activity#com.example.appcamping.RecuperarActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:59:9-55
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:63:9-55
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:59:19-52
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:63:19-52
 activity#com.example.appcamping.InformacionActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:60:9-57
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:64:9-57
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:60:19-54
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:64:19-54
 activity#com.example.appcamping.IniciadoActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:61:9-54
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:65:9-54
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:61:19-51
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:65:19-51
 activity#com.example.appcamping.LoginActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:62:9-51
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:66:9-51
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:62:19-48
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:66:19-48
 activity#com.example.appcamping.RegistroActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:63:9-54
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:67:9-54
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:63:19-51
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:67:19-51
 activity#com.example.appcamping.MainActivity
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:64:9-70:20
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:68:9-74:20
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:64:19-47
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:68:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:65:13-69:29
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:69:13-73:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:66:17-69
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:70:17-69
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:66:25-66
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:70:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:68:17-77
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:72:17-77
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:68:27-74
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:72:27-74
 service#com.example.appcamping.MyFirebaseMessagingService
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:72:9-78:19
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:76:9-82:19
 	android:exported
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:74:13-37
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:78:13-37
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:73:13-55
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:77:13-55
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:75:13-77:29
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:79:13-81:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:76:17-78
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:80:17-78
 	android:name
-		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:76:25-75
+		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:80:25-75
 uses-sdk
 INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml
@@ -340,6 +367,8 @@ MERGED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradl
 MERGED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ab35e7679e6b5a6acba06e393419f040\jetified-firebase-database-18.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ee402462607e3d7bc40e1166a58a6978\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ee402462607e3d7bc40e1166a58a6978\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4c337964d88492ed88df2a69a6db76ad\jetified-play-services-maps-16.1.0\AndroidManifest.xml:20:5-44
@@ -352,6 +381,8 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Angel\.grad
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\0a6c212f73963fa6835af45599dfab1e\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4cbae47e0dfb13cf34042c0d9c52f313\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4cbae47e0dfb13cf34042c0d9c52f313\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\28cd2d5eed3942b63c9ca980fe4dda23\jetified-play-services-flags-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\28cd2d5eed3942b63c9ca980fe4dda23\jetified-play-services-flags-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\92a9eed7bec865418cbf603ac380e877\jetified-firebase-auth-interop-18.0.0\AndroidManifest.xml:5:5-44
@@ -444,6 +475,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Angel\.g
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e5f4ab83b7154d8dd7689c213d4008f9\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\3ad98f043f0e278e1b4f445317842885\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\3ad98f043f0e278e1b4f445317842885\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\448ad5636d84a77758d1f5390643618a\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\448ad5636d84a77758d1f5390643618a\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\69ad70deb7fc3872e7a51cd7de424a87\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\69ad70deb7fc3872e7a51cd7de424a87\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\6ab1828441a6b45d05a01b9241ca901a\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -464,6 +497,10 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Angel\.gradle\caches
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ffd0aa10f2a787335b333d5b793ff3d9\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\d619de1e9e20a12a3fda730585e012a7\jetified-firebase-database-collection-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\d619de1e9e20a12a3fda730585e012a7\jetified-firebase-database-collection-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\9b6fcc30da8d4d18e3efe61e9ccf3b58\jetified-protolite-well-known-types-17.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\9b6fcc30da8d4d18e3efe61e9ccf3b58\jetified-protolite-well-known-types-17.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\d10c1748f6272b90f813c777e522a0f6\jetified-grpc-android-1.21.0\AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\d10c1748f6272b90f813c777e522a0f6\jetified-grpc-android-1.21.0\AndroidManifest.xml:7:5-9:41
 INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -496,6 +533,8 @@ MERGED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradl
 MERGED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ab35e7679e6b5a6acba06e393419f040\jetified-firebase-database-18.0.0\AndroidManifest.xml:29:9-33:19
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:30:9-34:19
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:30:9-34:19
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\86099965e0825156c26d8ace6673dd46\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\86099965e0825156c26d8ace6673dd46\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\74f8373b67587f52dd8e0b26472e42ff\jetified-firebase-iid-19.0.0\AndroidManifest.xml:29:9-35:19
@@ -532,6 +571,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ab35e7679e6b5a6acba06e393419f040\jetified-firebase-database-18.0.0\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:13:5-79
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4c337964d88492ed88df2a69a6db76ad\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4c337964d88492ed88df2a69a6db76ad\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\86099965e0825156c26d8ace6673dd46\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:23:5-79
@@ -544,6 +585,8 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\629db85cbb83fcb5231d4442d7e8c65b\jetified-play-services-measurement-impl-17.0.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\149dcb33f6f1d65f0983f39642a33941\jetified-play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\149dcb33f6f1d65f0983f39642a33941\jetified-play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\d10c1748f6272b90f813c777e522a0f6\jetified-grpc-android-1.21.0\AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\d10c1748f6272b90f813c777e522a0f6\jetified-grpc-android-1.21.0\AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-database:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\ab35e7679e6b5a6acba06e393419f040\jetified-firebase-database-18.0.0\AndroidManifest.xml:25:22-76
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
@@ -558,6 +601,12 @@ ADDED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\
 		ADDED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:33:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-storage:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\a99e130d2e7d6b5d4192017d2d14a558\jetified-firebase-storage-18.0.0\AndroidManifest.xml:32:17-107
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:20.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\e49b361ad630bb714c9ed6f33d20fee0\jetified-firebase-firestore-20.0.0\AndroidManifest.xml:21:17-111
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4c337964d88492ed88df2a69a6db76ad\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
@@ -576,6 +625,14 @@ ADDED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.gradl
 		ADDED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4cbae47e0dfb13cf34042c0d9c52f313\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4cbae47e0dfb13cf34042c0d9c52f313\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:29:13-82
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\86099965e0825156c26d8ace6673dd46\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\74f8373b67587f52dd8e0b26472e42ff\jetified-firebase-iid-19.0.0\AndroidManifest.xml:24:5-68

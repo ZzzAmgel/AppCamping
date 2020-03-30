@@ -70,13 +70,13 @@ public class IniciadoActivity extends AppCompatActivity {
     }
 
     public void EventosLink(View view){
-        Intent eventoslink = new Intent(IniciadoActivity.this, ShowData.class);
+        Intent eventoslink = new Intent(IniciadoActivity.this, ImagesActivity.class);
         startActivity(eventoslink);
     }
 
     public void GaleriaLink(View view){
-        //Intent galerialink = new Intent(IniciadoActivity.this, Galeria.class);
-        //startActivity(galerialink);
+        Intent galerialink = new Intent(IniciadoActivity.this, ImagesActivity1.class);
+        startActivity(galerialink);
     }
 
     public void ContactarLink(View view){

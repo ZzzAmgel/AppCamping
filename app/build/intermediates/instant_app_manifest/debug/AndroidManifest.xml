@@ -40,6 +40,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.appcamping.ImagesActivity1" />
+        <activity android:name="com.example.appcamping.Gestion.SendImages" />
+        <activity android:name="com.example.appcamping.ImagesActivity" />
+        <activity android:name="com.example.appcamping.Gestion.SendEventos" />
         <activity android:name="com.example.appcamping.ContactoActivity" />
         <activity android:name="com.example.appcamping.Gestion.MostrarReservas" />
         <activity android:name="com.example.appcamping.Gestion.EnviarMostrarGastos" />
@@ -120,6 +124,9 @@
                 android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
@@ -154,6 +161,11 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.appcamping.com.squareup.picasso"
+            android:exported="false" />
 
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"

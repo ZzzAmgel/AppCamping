@@ -18,7 +18,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ContactoActivity"></activity>
+        <activity android:name=".ImagesActivity1"></activity>
+        <activity android:name=".Gestion.SendImages" />
+        <activity android:name=".ImagesActivity" />
+        <activity android:name=".Gestion.SendEventos" />
+        <activity android:name=".ContactoActivity" />
         <activity android:name=".Gestion.MostrarReservas" />
         <activity android:name=".Gestion.EnviarMostrarGastos" />
         <activity android:name=".ShowData" />
