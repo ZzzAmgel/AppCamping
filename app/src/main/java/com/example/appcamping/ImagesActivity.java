@@ -19,6 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ImagesActivity extends AppCompatActivity {
@@ -48,6 +49,7 @@ public class ImagesActivity extends AppCompatActivity {
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                     Upload upload = postSnapshot.getValue(Upload.class);
                     mUploads.add(upload);
+                    Collections.reverse(mUploads);
                 }
 
                 mAdapter = new ImageAdapter(ImagesActivity.this, mUploads);

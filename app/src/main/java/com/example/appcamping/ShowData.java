@@ -40,8 +40,8 @@ public class ShowData extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_data);
         databaseReference = FirebaseDatabase.getInstance().getReference("Eventos");
-        listView = (ListView) findViewById(R.id.listViewShow);
-        btnDelete = (Button) findViewById(R.id.btnBorrarElemento);
+        listView = findViewById(R.id.listViewShow);
+        btnDelete = findViewById(R.id.btnBorrarElemento);
         //module=((Module)getApplicationContext());
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
         listView.setAdapter(arrayAdapter);

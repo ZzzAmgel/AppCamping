@@ -59,8 +59,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
 
     public void showNotification(Map<String, String> data){
-        String title = data.get("title").toString();
-        String body = data.get("body").toString();
+        String title = data.get("title");
+        String body = data.get("body");
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         String NOTIFICATION_CHANNEL_ID = getString(R.string.default_notification_channel_id);

@@ -70,9 +70,9 @@ public class EnviarEventos extends AppCompatActivity {
         View b = findViewById(R.id.btnSendFoto);
         b.setVisibility(View.GONE);
 
-        ch=(Button)findViewById(R.id.btnSubirFoto);
-        up=(Button)findViewById(R.id.btnSendFoto);
-        img=(ImageView)findViewById(R.id.imgPreview);
+        ch= findViewById(R.id.btnSubirFoto);
+        up= findViewById(R.id.btnSendFoto);
+        img= findViewById(R.id.imgPreview);
         ch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,10 +90,10 @@ public class EnviarEventos extends AppCompatActivity {
         //----------------------------------- FIN SUBIR FOTOS ADMIN-----------------------------------
         //----------------------------------- INICIO ENVIAR DBRT   -----------------------------------
 
-        mEditTextTitulo = (EditText) findViewById(R.id.editTitulo);
-        mEditTextMensaje = (EditText) findViewById(R.id.editDescripcion);
-        mFecha = (EditText) findViewById(R.id.editFecha);
-        mUrl = (EditText) findViewById(R.id.editUrl);
+        mEditTextTitulo = findViewById(R.id.editTitulo);
+        mEditTextMensaje = findViewById(R.id.editDescripcion);
+        mFecha = findViewById(R.id.editFecha);
+        mUrl = findViewById(R.id.editUrl);
         mDatabase = FirebaseDatabase.getInstance().getReference();
         EnviarRTB = findViewById(R.id.btnEnviar);
         EnviarRTB.setOnClickListener(new View.OnClickListener(){
@@ -181,7 +181,7 @@ public class EnviarEventos extends AppCompatActivity {
 
         Intent intent = new Intent();
         intent.setType("image/*");
-        intent.setAction(intent.ACTION_GET_CONTENT);
+        intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent, 1);
         View b = findViewById(R.id.btnSendFoto);
         b.setVisibility(View.VISIBLE);

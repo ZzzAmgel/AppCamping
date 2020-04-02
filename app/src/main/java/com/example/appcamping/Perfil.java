@@ -61,12 +61,12 @@ public class Perfil extends AppCompatActivity {
         vAuth = FirebaseAuth.getInstance();
 
         emailuser = vAuth.getCurrentUser().getEmail();
-        correovisible=(TextView) findViewById(R.id.textView3);
+        correovisible= findViewById(R.id.textView3);
         correovisible.setText(emailuser);
 
-        ch=(Button)findViewById(R.id.btnSubirImagen);
-        up=(Button)findViewById(R.id.btnConfirmarSubida);
-        img=(ImageView)findViewById(R.id.imgview);
+        ch= findViewById(R.id.btnSubirImagen);
+        up= findViewById(R.id.btnConfirmarSubida);
+        img= findViewById(R.id.imgview);
         ch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -115,7 +115,7 @@ public class Perfil extends AppCompatActivity {
 
         Intent intent = new Intent();
         intent.setType("image/*");
-        intent.setAction(intent.ACTION_GET_CONTENT);
+        intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent, 1);
         View b = findViewById(R.id.btnConfirmarSubida);
         b.setVisibility(View.VISIBLE);

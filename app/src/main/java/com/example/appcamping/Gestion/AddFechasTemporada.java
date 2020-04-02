@@ -22,7 +22,7 @@ public class AddFechasTemporada extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_fechas_temporada);
 
-        mFechaTempAlta = (EditText) findViewById(R.id.editTempAlta);
+        mFechaTempAlta = findViewById(R.id.editTempAlta);
         //mFechaTemBaja = (EditText) findViewById(R.id.editTemBaja);
         mDatabaseFechas = FirebaseDatabase.getInstance().getReference();
 

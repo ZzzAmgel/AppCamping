@@ -37,7 +37,7 @@ public class MostrarReservas extends AppCompatActivity {
         setContentView(R.layout.activity_mostrar_reservas);
 
         databaseReference= FirebaseDatabase.getInstance().getReference("Reservas");
-        listView=(ListView) findViewById(R.id.listviewReservas);
+        listView= findViewById(R.id.listviewReservas);
         //btnDelete = (Button) findViewById(R.id.btnBorrarElemento);
         arrayAdapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
         listView.setAdapter(arrayAdapter);

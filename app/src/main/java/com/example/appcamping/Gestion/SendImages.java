@@ -52,8 +52,6 @@ public class SendImages extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        View b = findViewById(R.id.edit_text_file_name1);
-        b.setVisibility(View.GONE);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send_images);

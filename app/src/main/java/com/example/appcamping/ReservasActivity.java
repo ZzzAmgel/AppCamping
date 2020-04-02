@@ -117,13 +117,13 @@ public class ReservasActivity extends AppCompatActivity {
 
             vAuth = FirebaseAuth.getInstance();
 
-            mNombreApellidos = (EditText) findViewById(R.id.editNombreReserva);
-            mDNI = (EditText) findViewById(R.id.editDNI);
-            mFechaIn = (EditText) findViewById(R.id.editFechaInicio);
-            mFechaFin = (EditText) findViewById(R.id.editFechaSalida);
-            mNumAdultos = (EditText) findViewById(R.id.editNumAdultos);
-            mNumNinos = (EditText) findViewById(R.id.editNumNinos);
-            mNumTelefono = (EditText) findViewById(R.id.editTelefonoMovil);
+            mNombreApellidos = findViewById(R.id.editNombreReserva);
+            mDNI = findViewById(R.id.editDNI);
+            mFechaIn = findViewById(R.id.editFechaInicio);
+            mFechaFin = findViewById(R.id.editFechaSalida);
+            mNumAdultos = findViewById(R.id.editNumAdultos);
+            mNumNinos = findViewById(R.id.editNumNinos);
+            mNumTelefono = findViewById(R.id.editTelefonoMovil);
 
             mDatabaseReserva = FirebaseDatabase.getInstance().getReference();
             EnviarReserva = findViewById(R.id.btnEnviarDatosReserva);

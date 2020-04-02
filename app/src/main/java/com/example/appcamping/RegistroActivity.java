@@ -46,11 +46,11 @@ public class RegistroActivity extends AppCompatActivity {
         vAuth = FirebaseAuth.getInstance();
         vDatabase = FirebaseDatabase.getInstance().getReference();
 
-        vNombre = (EditText) findViewById(R.id.editNombre);
-        vPassword = (EditText) findViewById(R.id.editPassword);
-        vCorreo = (EditText) findViewById(R.id.editCorreo);
-        vCPassword = (EditText) findViewById(R.id.ConfirmPassword);
-        vRegistrarse = (Button) findViewById(R.id.Registrarme);
+        vNombre = findViewById(R.id.editNombre);
+        vPassword = findViewById(R.id.editPassword);
+        vCorreo = findViewById(R.id.editCorreo);
+        vCPassword = findViewById(R.id.ConfirmPassword);
+        vRegistrarse = findViewById(R.id.Registrarme);
 
         vRegistrarse.setOnClickListener(new View.OnClickListener() {
             @Override

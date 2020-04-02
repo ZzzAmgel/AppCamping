@@ -25,7 +25,7 @@ public class IniciadoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_iniciado);
 
         vAuth = FirebaseAuth.getInstance();
-        vCerrarSesion = (Button) findViewById(R.id.buttonCerrarSesion);
+        vCerrarSesion = findViewById(R.id.buttonCerrarSesion);
 
 
 

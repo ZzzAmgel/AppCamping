@@ -57,12 +57,12 @@ public class InformacionActivity extends AppCompatActivity {
 
         //------------------- ON CREATE SUBIR BDRTB --------------------
 
-        mNombreApellidos = (EditText) findViewById(R.id.editNombre);
-        mNumAdultos = (EditText) findViewById(R.id.editAdultos);
-        mNumNinos = (EditText) findViewById(R.id.editNinos);
-        mFechaIn = (EditText) findViewById(R.id.editFechaIn);
-        mFechaFin = (EditText) findViewById(R.id.editFechaSalida);
-        mNumTelefono = (EditText) findViewById(R.id.editTelefonoMovil);
+        mNombreApellidos = findViewById(R.id.editNombre);
+        mNumAdultos = findViewById(R.id.editAdultos);
+        mNumNinos = findViewById(R.id.editNinos);
+        mFechaIn = findViewById(R.id.editFechaIn);
+        mFechaFin = findViewById(R.id.editFechaSalida);
+        mNumTelefono = findViewById(R.id.editTelefonoMovil);
 
         mDatabaseReserva = FirebaseDatabase.getInstance().getReference();
         //EnviarReserva = findViewById(R.id.btnEnviar);

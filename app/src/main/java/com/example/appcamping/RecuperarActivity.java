@@ -29,8 +29,8 @@ public class RecuperarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recuperar);
 
-        vRecEmail = (EditText) findViewById(R.id.editEmailRec);
-        vButtonRec = (Button) findViewById(R.id.buttonRestablecer);
+        vRecEmail = findViewById(R.id.editEmailRec);
+        vButtonRec = findViewById(R.id.buttonRestablecer);
         vAuth = FirebaseAuth.getInstance();
         vLoading = new ProgressDialog(this);
 

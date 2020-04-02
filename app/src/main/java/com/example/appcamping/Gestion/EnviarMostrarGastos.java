@@ -44,8 +44,8 @@ public class EnviarMostrarGastos extends AppCompatActivity {
         setContentView(R.layout.activity_enviar_mostrar_gastos);
 
         mFechaGasto = new Date().toString();
-        mEditNombreGasto = (EditText) findViewById(R.id.editNombreGasto);
-        mEditPrecio = (EditText) findViewById(R.id.editPrecio);
+        mEditNombreGasto = findViewById(R.id.editNombreGasto);
+        mEditPrecio = findViewById(R.id.editPrecio);
         mDatabaseGastos = FirebaseDatabase.getInstance().getReference();
         mEnviarGastos = findViewById(R.id.btnEnviarGastos);
         mEnviarGastos.setOnClickListener(new View.OnClickListener() {
@@ -64,7 +64,7 @@ public class EnviarMostrarGastos extends AppCompatActivity {
 
         //-----------------MOSTRAR GASTOS--------------
         databaseReference= FirebaseDatabase.getInstance().getReference("Gastos");
-        listview=(ListView) findViewById(R.id.listMostrarGastos);
+        listview= findViewById(R.id.listMostrarGastos);
         arrayAdapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
         listview.setAdapter(arrayAdapter);
         databaseReference.addChildEventListener(new ChildEventListener() {
