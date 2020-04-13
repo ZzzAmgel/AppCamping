@@ -21,6 +21,7 @@ MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\Angel\.grad
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\0a6c212f73963fa6835af45599dfab1e\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4cbae47e0dfb13cf34042c0d9c52f313\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:17:1-37:12
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [com.zolad:zoominimageview:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\54e3c5067b126705b4479f71d2901b0a\jetified-zoominimageview-1.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\28cd2d5eed3942b63c9ca980fe4dda23\jetified-play-services-flags-17.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\92a9eed7bec865418cbf603ac380e877\jetified-firebase-auth-interop-18.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\724232c7699e1aa48da05711ba9209f1\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:2:1-7:12
@@ -212,7 +213,7 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Angel\.gradle\
 	android:theme
 		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:20:9-40
 activity#com.example.appcamping.ImagesActivity1
-ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:21:9-62
+ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:21:9-53
 	android:name
 		ADDED from C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:21:19-50
 activity#com.example.appcamping.Gestion.SendImages
@@ -383,6 +384,8 @@ MERGED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.grad
 MERGED from [com.google.firebase:firebase-messaging:19.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4cbae47e0dfb13cf34042c0d9c52f313\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\4ab1348f8ef7385761fa324ed1777e72\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.zolad:zoominimageview:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\54e3c5067b126705b4479f71d2901b0a\jetified-zoominimageview-1.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.zolad:zoominimageview:1.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\54e3c5067b126705b4479f71d2901b0a\jetified-zoominimageview-1.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\28cd2d5eed3942b63c9ca980fe4dda23\jetified-play-services-flags-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\28cd2d5eed3942b63c9ca980fe4dda23\jetified-play-services-flags-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\92a9eed7bec865418cbf603ac380e877\jetified-firebase-auth-interop-18.0.0\AndroidManifest.xml:5:5-44

@@ -110,6 +110,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         });
 
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(casa3, 18), 5000, null);   //animación zoom
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(casa3, 18), 8000, null);   //animación zoom
     }
 }

@@ -19,14 +19,14 @@
 
     <EditText
         android:id="@+id/edit_text_file_name"
-        android:layout_width="328dp"
-        android:layout_height="118dp"
+        android:layout_width="185dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="171dp"
         android:gravity="start|top"
-        android:hint="Titulo  \n Descripción \n Fecha"
-        android:lines="20"
+        android:hint="Titulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent" />
@@ -52,13 +52,37 @@
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="406dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/progress_bar"
-        android:layout_below="@+id/edit_text_file_name"
-        android:layout_marginTop="17dp"
 
+        android:layout_below="@+id/edit_text_file_date"
+        android:layout_marginTop="42dp"
         android:layout_marginBottom="-1dp"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/edit_text_file_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="106dp"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit_text_file_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+        android:hint="dd/mm/aaaa"
+        android:inputType="date" />
 
 </RelativeLayout>

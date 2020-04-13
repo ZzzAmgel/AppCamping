@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Gestion.AddFechasTemporada">
 
+
+
     <EditText
         android:id="@+id/editTempAlta"
         android:layout_width="wrap_content"
@@ -15,6 +17,7 @@
         android:ems="10"
         android:inputType="date"
         android:text="dd/mm/aaaa"
+        android:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,11 +36,40 @@
         android:id="@+id/btnEnviarFechasTarifas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="48dp"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
         android:onClick="EnviarTempReservas"
         android:text="Enviar Fechas"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#7fadca"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTempAlta" />
+
+    <Button
+        android:id="@+id/btnVolverInicioDesdeAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="Volver"
+        android:text="Volver"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#462f99"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviarFechasTarifas" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

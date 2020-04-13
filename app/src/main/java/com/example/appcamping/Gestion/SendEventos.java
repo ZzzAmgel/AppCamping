@@ -2,11 +2,13 @@ package com.example.appcamping.Gestion;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -37,6 +39,7 @@ public class SendEventos extends AppCompatActivity {
     private Button mButtonChooseImage;
     private Button mButtonUpload;
     private EditText mEditTextFileName;
+    private EditText mEditTextFileTitle;
     private EditText mEditTextFileDescripcion;
     private EditText mEditTextFileFecha;
     private ImageView mImageView;
@@ -58,6 +61,8 @@ public class SendEventos extends AppCompatActivity {
         mButtonChooseImage = findViewById(R.id.button_choose_image);
         mButtonUpload = findViewById(R.id.button_upload);
         mEditTextFileName = findViewById(R.id.edit_text_file_name);
+        mEditTextFileDescripcion = findViewById(R.id.edit_text_file_descripcion);
+        mEditTextFileFecha = findViewById(R.id.edit_text_file_date);
         mImageView = findViewById(R.id.image_view);
         mProgressBar = findViewById(R.id.progress_bar);
 
@@ -116,6 +121,7 @@ public class SendEventos extends AppCompatActivity {
 
             mUploadTask = fileReference.putFile(mImageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 //mUploadTask = fileReference.putFile(mImageUri)
+                @RequiresApi(api = Build.VERSION_CODES.O)
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     Handler handler = new Handler();
@@ -142,8 +148,10 @@ public class SendEventos extends AppCompatActivity {
                     while (!urlTask.isSuccessful());
                     Uri downloadUrl = urlTask.getResult();
 
+                    String allContent = String.join("\n",mEditTextFileName.getText(), mEditTextFileDescripcion.getText(), mEditTextFileFecha.getText()).trim();
+
                     //Log.d(TAG, "onSuccess: firebase download url: " + downloadUrl.toString()); //use if testing...don't need this line.
-                    Upload upload = new Upload(mEditTextFileName.getText().toString().trim(),downloadUrl.toString());
+                    Upload upload = new Upload(allContent,downloadUrl.toString());
 
                     String uploadId = mDatabaseRef.push().getKey();
                     mDatabaseRef.child(uploadId).setValue(upload);

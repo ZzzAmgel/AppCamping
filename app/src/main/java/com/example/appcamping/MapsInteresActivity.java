@@ -38,6 +38,7 @@ public class MapsInteresActivity extends FragmentActivity implements OnMapReadyC
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 
         // Add a marker in Sydney and move the camera
         LatLng piscina = new LatLng(38.359441, -1.881548);
@@ -50,40 +51,16 @@ public class MapsInteresActivity extends FragmentActivity implements OnMapReadyC
         mMap.addMarker(new MarkerOptions().position(santuario).title("Santuario"));
         LatLng castillo = new LatLng(38.329038, -1.984665);
         mMap.addMarker(new MarkerOptions().position(castillo).title("Castillo"));
+        LatLng picomontana = new LatLng(38.357610, -1.883538);
+        mMap.addMarker(new MarkerOptions().position(picomontana).title("Pico el Cañar"));
+        LatLng camino = new LatLng(38.359597, -1.884757);
+        mMap.addMarker(new MarkerOptions().position(camino).title("Sendero"));
+        LatLng aldea = new LatLng(38.353325, -1.885782);
+        mMap.addMarker(new MarkerOptions().position(aldea).title("Aldea El Cañar"));
+
+
         mMap.moveCamera(CameraUpdateFactory.newLatLng(piscina));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(piscina, 22), 5000, null);   //animación zoom
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(piscina, 16), 8000, null);
 
-        /*
-        mMap = googleMap;
-        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
-            @Override
-            public View getInfoWindow(Marker marker) {
-                return null;
-            }
-
-            @Override
-            public View getInfoContents(Marker marker) {
-                if(popup == null){
-                    popup=getLayoutInflater().inflate(R.layout.popupmap, null);
-                }
-
-                TextView texto=(TextView)popup.findViewById(R.id.title);
-                ImageView imagen=(ImageView)popup.findViewById(R.id.icon);
-                imagen.setImageResource(R.drawable.campingmap);
-                texto.setText(marker.getTitle());
-
-                //Nos hemos saltado algo: https://www.youtube.com/watch?v=h-LVVr1tpHY
-
-                return (popup);
-            }
-        });  */
-
-        // Add a marker in Sydney and move the camera
-
-        //mMap.addMarker(new MarkerOptions().position(camping).title("Camping"));
-        //mMap.addMarker(new MarkerOptions().position(rio).title("Rio"));
-        //mMap.addMarker(new MarkerOptions().position(pantano).title("Pantano"));
-        //mMap.addMarker(new MarkerOptions().position(santuario).title("Santuario"));
-        //mMap.addMarker(new MarkerOptions().position(restaurante).title("Restaurante"));
     }
 }

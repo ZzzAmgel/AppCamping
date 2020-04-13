@@ -4,71 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"><![CDATA[
     tools:context=".Gestion.AccionesAdminActivity">
+
+
+
+    ]]>
 
     <Button
         android:id="@+id/btnAdministrarEventos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_width="144dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="52dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/eventos2"
         android:onClick="EnviarEventosAdmin"
         android:text="Agregar Eventos"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#7fadca"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnCambiarFecha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="144dp"
+        android:layout_height="121dp"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="48dp"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
         android:onClick="CambiarFechaAdmin"
         android:text="Cambiar fechas"
+        android:elevation="2dp"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#ef9a9a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/btnVolverInicioDesdeAdmin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/ic_stat_ic_notification"
         android:onClick="VolverAInicio"
         android:text="Volver"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#462f99"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnGestionGastos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="160dp"
+        android:layout_width="144dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:drawableLeft="@drawable/dinero"
         android:onClick="GestionGastos"
         android:text="Gastos"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#ef9a9a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCambiarFecha" />
 
     <Button
         android:id="@+id/btnMostrarReservas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="116dp"
+        android:layout_width="144dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:drawableLeft="@drawable/reservas"
         android:onClick="GestionReservas"
-        android:text="Mostrar Reservas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGestionGastos" />
+        android:text="Reservas"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#ef9a9a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdministrarEventos" />
 
     <Button
         android:id="@+id/btnAddGalery"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_width="144dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="136dp"
+        android:drawableLeft="@android:drawable/ic_menu_upload"
         android:onClick="SendImages"
         android:text="Subir Imagenes"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#ef9a9a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMostrarReservas" />
 </androidx.constraintlayout.widget.ConstraintLayout>

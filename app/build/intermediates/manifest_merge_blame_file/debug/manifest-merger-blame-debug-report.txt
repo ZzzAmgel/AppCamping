@@ -69,7 +69,7 @@
 41        android:theme="@style/AppTheme" >
 41-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:20:9-40
 42        <activity android:name="com.example.appcamping.ImagesActivity1" />
-42-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:21:9-62
+42-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:21:9-53
 42-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:21:19-50
 43        <activity android:name="com.example.appcamping.Gestion.SendImages" />
 43-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:22:9-56

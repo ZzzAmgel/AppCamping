@@ -112,7 +112,6 @@ public class Perfil extends AppCompatActivity {
     }
 
     private void Filechooser(){
-
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
