@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/reservas"
+        android:icon="@drawable/reservas"
+        android:title="Reservas" />
+    <item
+
+        android:id="@+id/home"
+        android:icon="@drawable/mapa"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/multimedia"
+        android:icon="@drawable/galeria"
+        android:title="Multimedia" />
+
+
+
+</menu>

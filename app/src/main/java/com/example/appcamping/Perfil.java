@@ -97,7 +97,7 @@ public class Perfil extends AppCompatActivity {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                         // Get a URL to the uploaded content
-                        //Uri downloadUrl = mStorageRef.getStorage();
+                        FirebaseStorage downloadUrl = mStorageRef.getStorage();
                         Toast.makeText(Perfil.this, "La imagen se ha subido correctamente", Toast.LENGTH_SHORT).show();
                     }
                 })
@@ -192,5 +192,11 @@ public class Perfil extends AppCompatActivity {
         startActivity(new Intent(Perfil.this, MainActivity.class));
         finish();
     }
+
+    public void ContactarLink(View view){
+        Intent contactarlink = new Intent(Perfil.this, ContactoActivity.class);
+        startActivity(contactarlink);
+    }
+
 
 }

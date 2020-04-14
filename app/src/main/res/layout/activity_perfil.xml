@@ -101,4 +101,17 @@
         app:layout_constraintStart_toEndOf="@+id/imgview"
         app:layout_constraintTop_toBottomOf="@+id/btnSubirImagen"
         app:layout_constraintVertical_bias="0.791" />
+
+    <Button
+        android:id="@+id/buttonContacta"
+        android:layout_width="139dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="ContactarLink"
+        android:text="Contacto"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#007C52"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,27 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_mapa.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\mapa.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_dinero.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-mdpi\\dinero.png"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_reservas.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\reservas.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_fechas_temporada.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_add_fechas_temporada.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_reservas.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\reservas.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_dinero.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-hdpi\\dinero.png"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_iniciado.xml.flat",
@@ -36,24 +20,8 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_contacto.xml"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_contacto.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-mdpi\\contacto.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_eventos.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-mdpi\\eventos.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_reservasxs.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\reservasxs.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_eventos.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-hdpi\\eventos.png"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_enviar_eventos.xml.flat",
@@ -68,24 +36,12 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xhdpi\\reservas.png"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mapa.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-hdpi\\mapa.png"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_mapa.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xhdpi\\mapa.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_reservas.png.flat",
@@ -112,10 +68,6 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-hdpi\\contacto.png"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_moneyicon.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxxhdpi\\moneyicon.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_images1.xml.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_images1.xml"
     },
@@ -124,20 +76,8 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_informacion.xml"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_eventos.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\eventos.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_stat_ic_notification.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\ic_stat_ic_notification.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_eventos.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xhdpi\\eventos.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
@@ -156,28 +96,12 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-mdpi\\ic_stat_ic_notification.png"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_stat_ic_notification.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-hdpi\\ic_stat_ic_notification.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_galeria.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-mdpi\\galeria.png"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_mostar_eventos.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_mostar_eventos.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_dinero.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xhdpi\\dinero.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_galeria.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\galeria.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_reservasxs.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-mdpi\\reservasxs.png"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_recuperar.xml.flat",
@@ -188,20 +112,8 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\mapa.png"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_mostrar_reservas.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_mostrar_reservas.xml"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_eventos2.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\eventos2.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_evento_view.xml.flat",
@@ -220,24 +132,12 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\contacto.png"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_reservasxs.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\reservasxs.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_maps.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_reservas.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-mdpi\\reservas.png"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_image_item1.xml.flat",
@@ -248,56 +148,20 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_reservas.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_reservas.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_acciones_admin.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_acciones_admin.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_image_item.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\image_item.xml"
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_multimedia.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_multimedia.xml"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_eventos2.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\eventos2.png"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_images.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_images.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_galeria.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\galeria.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_dinero.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\dinero.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_carabana.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\carabana.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_perfil.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_perfil.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_dinero.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\dinero.png"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_stat_ic_notification.png.flat",
@@ -316,10 +180,6 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable\\background.jpg"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_contacto.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\contacto.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps_interes.xml.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_maps_interes.xml"
     },
@@ -332,6 +192,178 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xhdpi\\reservasxs.png"
     },
     {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_moneyicon.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xhdpi\\moneyicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_popupmap.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\popupmap.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_moneyicon.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxhdpi\\moneyicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_mapa.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\mapa.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_fechas_temporada.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_add_fechas_temporada.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_reservas.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\reservas.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_dinero.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-hdpi\\dinero.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_contacto.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-mdpi\\contacto.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_reservasxs.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\reservasxs.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_eventos.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-hdpi\\eventos.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable_campingelcanarportada.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable\\campingelcanarportada.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_moneyicon.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxxhdpi\\moneyicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_eventos.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\eventos.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_eventos.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xhdpi\\eventos.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_navigation.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\menu\\menu_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_stat_ic_notification.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-hdpi\\ic_stat_ic_notification.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_mostar_eventos.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_mostar_eventos.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_dinero.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xhdpi\\dinero.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable_selector.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable\\selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_reservasxs.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-mdpi\\reservasxs.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_mostrar_reservas.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_mostrar_reservas.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_eventos2.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\eventos2.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_reservasxs.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\reservasxs.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_reservas.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-mdpi\\reservas.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_reservas.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_reservas.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_acciones_admin.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_acciones_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_image_item.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\image_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_images.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_images.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_galeria.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\galeria.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_dinero.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\dinero.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_carabana.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxxhdpi\\carabana.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_perfil.xml.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_perfil.xml"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_dinero.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\dinero.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_contacto.png.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\contacto.png"
+    },
+    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_eventos2.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xhdpi\\eventos2.png"
     },
@@ -340,24 +372,12 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable\\campingmap.jpg"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_moneyicon.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xhdpi\\moneyicon.png"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_moneyicon.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-mdpi\\moneyicon.png"
     },
     {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_popupmap.xml.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\popupmap.xml"
-    },
-    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registro.xml.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\layout\\activity_registro.xml"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_eventos2.png.flat",
@@ -370,9 +390,5 @@
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_reservasxs.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-hdpi\\reservasxs.png"
-    },
-    {
-        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_moneyicon.png.flat",
-        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxhdpi\\moneyicon.png"
     }
 ]

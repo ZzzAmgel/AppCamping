@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MultimediaActivity">
+
+    <Button
+        android:id="@+id/buttonCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:layout_marginBottom="64dp"
+        android:drawableLeft="@drawable/ic_stat_ic_notification"
+        android:text="Cerrar Sesion"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#007C52"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContacta"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="100dp"
+        android:drawableLeft="@drawable/ic_stat_ic_notification"
+        android:onClick="Perfil"
+        android:text="Perfil"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#007C52"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCerrarSesion"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnMapaInteres"
+        android:layout_width="139dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="5dp"
+        android:drawableLeft="@drawable/mapa"
+        android:onClick="MapaInteres"
+        android:text="Lugares de interes"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#007C52"
+        app:layout_constraintEnd_toStartOf="@+id/btnEventos"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEventos"
+        android:layout_width="139dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:drawableLeft="@drawable/eventos"
+        android:onClick="EventosLink"
+        android:text="Eventos"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#007C52"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContacta" />
+
+    <Button
+        android:id="@+id/btnGaleria"
+        android:layout_width="139dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="36dp"
+        android:drawableLeft="@drawable/galeria"
+        android:onClick="GaleriaLink"
+        android:text="Galeria de fotos"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#007C52"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEventos" />
+
+    <Button
+        android:id="@+id/btnMapaReservas"
+        android:layout_width="139dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        android:drawableLeft="@drawable/mapa"
+        android:onClick="MapaReservas"
+        android:text="Mapa Interactivo"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#007C52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMapaInteres" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/cardview_dark_background"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/menu_navigation"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

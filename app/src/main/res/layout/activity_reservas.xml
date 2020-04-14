@@ -10,27 +10,15 @@
         android:id="@+id/textInfoParcela"
         android:layout_width="286dp"
         android:layout_height="94dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="64dp"
         android:text="Precios de las casas en temporada baja:\n
 •2 Personas desde 50€\n
 •4 Personas desde 90€\n
 •6 Personas desde 135€"
-        app:layout_constraintBottom_toTopOf="@+id/editNombreReserva"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnMapaReservas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
-        android:onClick="MapaInteres"
-        android:text="Mapa Interactivo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.881"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnShowCasa"
@@ -64,19 +52,19 @@
         android:id="@+id/editNombreReserva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="148dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textParcelas" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editDNI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="DNI"
@@ -88,7 +76,7 @@
         android:id="@+id/editFechaInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="date"
         android:text="Fecha Entrada"
@@ -100,7 +88,7 @@
         android:id="@+id/editFechaSalida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="date"
         android:text="Fecha Salida"
@@ -112,7 +100,7 @@
         android:id="@+id/editNumAdultos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="Numero adultos"
@@ -124,7 +112,7 @@
         android:id="@+id/editNumNinos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number|numberDecimal"
         android:text="Numero Niños"
@@ -136,28 +124,28 @@
         android:id="@+id/textInfoCasa"
         android:layout_width="290dp"
         android:layout_height="87dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="64dp"
         android:text="Precios de las casas en temporada baja:\n •2 Personas desde 60€\n •4 Personas desde 100€\n •6 Personas desde 150€"
-        app:layout_constraintBottom_toTopOf="@+id/editNombreReserva"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textInformación"
         android:layout_width="158dp"
         android:layout_height="111dp"
-        android:layout_marginBottom="16dp"
         android:gravity="center"
 
         android:text="
 · Desayuno incluido\n
 · Niños menores de 6 años gratis\n
 · Niños entre 6 y 14 años 15 €"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTelefonoMovil" />
 
     <TextView
         android:id="@+id/textParcelas"
@@ -174,10 +162,11 @@
         android:id="@+id/btnEnviarDatosReserva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
         android:onClick="EnviarReserva"
         android:text="Enviar Reserva"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.879"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTelefonoMovil" />
 
@@ -185,12 +174,24 @@
         android:id="@+id/editTelefonoMovil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="number"
         android:text="Numero de Telefono"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNumNinos" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/cardview_dark_background"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/menu_navigation"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

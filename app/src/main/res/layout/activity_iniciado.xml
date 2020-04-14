@@ -6,122 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".IniciadoActivity">
 
+
     <Button
         android:id="@+id/buttonInicio"
         android:layout_width="111dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
         android:drawableLeft="@drawable/ic_stat_ic_notification"
         android:onClick="Enviar"
         android:text="Gestión"
         android:textColor="@android:color/white"
         app:backgroundTint="#007C52"
-        app:layout_constraintBottom_toTopOf="@+id/btnPerfil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/buttonReservas"
-        android:layout_width="139dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        android:drawableLeft="@drawable/reservas"
-        android:onClick="Mapa"
-        android:text="Reservas"
-        android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
-        app:layout_constraintEnd_toStartOf="@+id/buttonContacta"
-        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonContacta"
-        android:layout_width="139dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="40dp"
-        android:onClick="ContactarLink"
-        android:text="Contacto"
-        android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/cardview_dark_background"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:menu="@menu/menu_navigation"
+        />
 
-    <Button
-        android:id="@+id/buttonCerrarSesion"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="480dp"
-        android:drawableLeft="@drawable/ic_stat_ic_notification"
-        android:text="Cerrar Sesion"
-        android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonContacta"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintTop_toBottomOf="@+id/TituloHome"
+        app:srcCompat="@drawable/campingmap" />
 
-    <Button
-        android:id="@+id/btnPerfil"
-        android:layout_width="111dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="20dp"
-        android:drawableLeft="@drawable/ic_stat_ic_notification"
-        android:onClick="Perfil"
-        android:text="Perfil"
-        android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonCerrarSesion"
-        app:layout_constraintHorizontal_bias="0.178"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnMapaInteres"
-        android:layout_width="139dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
-        android:drawableLeft="@drawable/mapa"
-        android:onClick="MapaInteres"
-        android:text="Lugares de interes"
-        android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
-        app:layout_constraintEnd_toStartOf="@+id/btnEventos"
-        app:layout_constraintHorizontal_bias="0.568"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonReservas" />
-
-    <Button
-        android:id="@+id/btnEventos"
-        android:layout_width="139dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="40dp"
-        android:drawableLeft="@drawable/eventos"
-        android:onClick="EventosLink"
-        android:text="Eventos"
-        android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
+    <TextView
+        android:id="@+id/TituloHome"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:accessibilityLiveRegion="polite"
+        android:clickable="true"
+        android:contentDescription="Bienvenido a la app de riorural en la cual podrás explorar miles de posiblidiades."
+        android:text="Bienvenido a tu camping"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonContacta" />
-
-    <Button
-        android:id="@+id/btnGaleria"
-        android:layout_width="139dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="16dp"
-        android:drawableLeft="@drawable/galeria"
-        android:onClick="GaleriaLink"
-        android:text="Galeria de fotos"
-        android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEventos" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
