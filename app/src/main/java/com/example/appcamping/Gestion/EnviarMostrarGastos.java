@@ -4,16 +4,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.example.appcamping.IniciadoActivity;
+import com.example.appcamping.MultimediaActivity;
 import com.example.appcamping.R;
+import com.example.appcamping.ReservasActivity;
 import com.example.appcamping.models.Gastos;
 import com.example.appcamping.models.Module2;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -59,6 +67,8 @@ public class EnviarMostrarGastos extends AppCompatActivity {
                 mDatabaseGastos.child("Gastos").child(key).child("NombreGasto").setValue(nombregasto);
                 mDatabaseGastos.child("Gastos").child(key).child("Precio").setValue(precio);
                 mDatabaseGastos.child("Gastos").child(key).child("FechaGasto").setValue(fechagasto);
+
+
             }
         });
 
@@ -96,6 +106,33 @@ public class EnviarMostrarGastos extends AppCompatActivity {
 
             }
         });
+
+        //---------------------------NAVIGATION VIEW ----------------------------------------
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch(menuItem.getItemId()){
+                    case R.id.reservas:
+                        startActivity(new Intent(getApplicationContext(), ReservasActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.home:
+                        startActivity(new Intent(getApplicationContext(), IniciadoActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.multimedia:
+                        startActivity(new Intent(getApplicationContext(), MultimediaActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
+        //---------------------------NAVIGATION VIEW ----------------------------------------
 
     }
 

@@ -5,12 +5,14 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -19,11 +21,15 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.appcamping.IniciadoActivity;
+import com.example.appcamping.MultimediaActivity;
 import com.example.appcamping.R;
+import com.example.appcamping.ReservasActivity;
 import com.example.appcamping.models.Upload;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -87,6 +93,32 @@ public class SendEventos extends AppCompatActivity {
                 }
             }
         });
+        //---------------------------NAVIGATION VIEW ----------------------------------------
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch(menuItem.getItemId()){
+                    case R.id.reservas:
+                        startActivity(new Intent(getApplicationContext(), ReservasActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.home:
+                        startActivity(new Intent(getApplicationContext(), IniciadoActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.multimedia:
+                        startActivity(new Intent(getApplicationContext(), MultimediaActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
+        //---------------------------NAVIGATION VIEW ----------------------------------------
 
     }
 
@@ -116,6 +148,10 @@ public class SendEventos extends AppCompatActivity {
     }
 
     private void uploadFile() {
+        final ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setIcon(R.mipmap.ic_launcher);
+
+
         if (mImageUri != null) {
             StorageReference fileReference = mStorageRef.child(System.currentTimeMillis() + "." + getFileExtension(mImageUri));
 
@@ -130,7 +166,7 @@ public class SendEventos extends AppCompatActivity {
                         public void run() {
                             mProgressBar.setProgress(0);
                         }
-                    }, 500);
+                    }, 2000);
                     Toast.makeText(SendEventos.this, "Imagen subida correctamente", Toast.LENGTH_SHORT).show();
 
                     /*
@@ -149,12 +185,23 @@ public class SendEventos extends AppCompatActivity {
                     Uri downloadUrl = urlTask.getResult();
 
                     String allContent = String.join("\n",mEditTextFileName.getText(), mEditTextFileDescripcion.getText(), mEditTextFileFecha.getText()).trim();
+                    progressDialog.setMessage("Publicando evento con los siguientes datos: \n"+ allContent);
+                    progressDialog.show();
 
                     //Log.d(TAG, "onSuccess: firebase download url: " + downloadUrl.toString()); //use if testing...don't need this line.
                     Upload upload = new Upload(allContent,downloadUrl.toString());
 
                     String uploadId = mDatabaseRef.push().getKey();
                     mDatabaseRef.child(uploadId).setValue(upload);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (progressDialog.isShowing()){
+                                progressDialog.dismiss();
+                            }
+                        }
+                    }, 2000);
+
 
 
                 }

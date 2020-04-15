@@ -4,64 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/carabana"
     tools:context=".LoginActivity">
 
     <EditText
         android:id="@+id/Correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="E-mail"
+        android:textColor="#FFFFFF"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/Password"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
         android:id="@+id/Password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Contraseña"
+        android:textColor="#FFFFFF"
         android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Correo" />
+
 
     <Button
         android:id="@+id/Registrase"
+        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="Registro"
-        android:text="Crear Cuenta"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Crea una cuenta aquí"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonIniciar" />
 
     <Button
         android:id="@+id/buttonIniciar"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/ovalo"
         android:text="Iniciar Sesión"
-        app:layout_constraintBottom_toTopOf="@+id/Registrase"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password" />
 
-
     <Button
         android:id="@+id/buttonRecuperarPass"
-        android:layout_width="346dp"
-        android:layout_height="53dp"
+        android:layout_width="304dp"
+        android:layout_height="49dp"
+        android:background="@drawable/ovalo"
         android:onClick="RecupearPass"
         android:text="Recuperar Contraseña"
-        app:layout_constraintBottom_toTopOf="@+id/Registrase"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonIniciar" />
+        app:layout_constraintTop_toBottomOf="@+id/Registrase"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="145dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rioruralicon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

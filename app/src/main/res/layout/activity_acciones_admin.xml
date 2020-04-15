@@ -37,25 +37,10 @@
         android:text="Cambiar fechas"
         android:elevation="2dp"
         android:textColor="@android:color/white"
-        app:backgroundTint="#ef9a9a"
+        app:backgroundTint="#7fadca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <Button
-        android:id="@+id/btnVolverInicioDesdeAdmin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="16dp"
-        android:drawableLeft="@drawable/ic_stat_ic_notification"
-        android:onClick="VolverAInicio"
-        android:text="Volver"
-        android:textColor="@android:color/white"
-        app:backgroundTint="#462f99"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnGestionGastos"
@@ -67,7 +52,7 @@
         android:onClick="GestionGastos"
         android:text="Gastos"
         android:textColor="@android:color/white"
-        app:backgroundTint="#ef9a9a"
+        app:backgroundTint="#7fadca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCambiarFecha" />
 
@@ -81,7 +66,7 @@
         android:onClick="GestionReservas"
         android:text="Reservas"
         android:textColor="@android:color/white"
-        app:backgroundTint="#ef9a9a"
+        app:backgroundTint="#7fadca"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAdministrarEventos" />
 
@@ -95,7 +80,19 @@
         android:onClick="SendImages"
         android:text="Subir Imagenes"
         android:textColor="@android:color/white"
-        app:backgroundTint="#ef9a9a"
+        app:backgroundTint="#7fadca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMostrarReservas" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/cardview_dark_background"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_navigation" />
 </androidx.constraintlayout.widget.ConstraintLayout>

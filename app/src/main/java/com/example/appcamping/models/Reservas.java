@@ -1,8 +1,11 @@
 package com.example.appcamping.models;
 
+import android.widget.EditText;
+
 public class Reservas {
     String Casa;
-    String Correo;
+    String DNI;
+    String Email;
     String FechaFin;
     String FechaInicio;
     String NumAdultos;
@@ -11,9 +14,10 @@ public class Reservas {
     String Titulo;
 
     public Reservas(){}
-    public Reservas(String casa, String correo, String fechaFin, String fechaInicio, String numAdultos, String numNinos,String numeroTelefono, String titulo){
+    public Reservas(String casa, String dni, String email, String fechaFin, String fechaInicio, String numAdultos, String numNinos,String numeroTelefono, String titulo){
         Casa = casa;
-        Correo = correo;
+        DNI = dni;
+        Email = email;
         FechaFin = fechaFin;
         FechaInicio = fechaInicio;
         NumAdultos = numAdultos;
@@ -30,12 +34,20 @@ public class Reservas {
         Casa = casa;
     }
 
-    public String getCorreo() {
-        return Correo;
+    public String getDNI() {
+        return DNI;
     }
 
-    public void setCorreo(String correo) {
-        Correo = correo;
+    public void setDNI(String dni) {
+        DNI = dni;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
     }
 
     public String getFechaFin() {
@@ -87,7 +99,7 @@ public class Reservas {
     }
 
     public String toString(){
-        return "Casa o parcela: "+ Casa + "\nDirección de correo: " + Correo +"\nDía de Salida"+ FechaFin +"\nDía de Entrada: "+ FechaInicio +"\nNº Adultos: "+ NumAdultos +"\nNº Niños: "+ NumNinos +"\nTelefono: "+ NumeroTelefono +"\nTitular: "+ Titulo;
+        return "Casa o parcela: "+ Casa + "\nDni:" + DNI + "\nDirección de correo: " + Email +"\nDía de Salida"+ FechaFin +"\nDía de Entrada: "+ FechaInicio +"\nNº Adultos: "+ NumAdultos +"\nNº Niños: "+ NumNinos +"\nTelefono: "+ NumeroTelefono +"\nTitular: "+ Titulo;
     }
 
 }

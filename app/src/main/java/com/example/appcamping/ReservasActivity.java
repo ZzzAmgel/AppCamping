@@ -3,8 +3,10 @@ package com.example.appcamping;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -84,6 +86,8 @@ public class ReservasActivity extends AppCompatActivity {
             }
         });
         //---------------------------NAVIGATION VIEW ----------------------------------------
+
+
 
         //-----------------------------COGER FECHA
 
@@ -219,6 +223,7 @@ public class ReservasActivity extends AppCompatActivity {
 
     public void EnviarReserva(View view){
 
+
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         boolean emailVerified = user.isEmailVerified();
         if(emailVerified == false) {
@@ -240,15 +245,22 @@ public class ReservasActivity extends AppCompatActivity {
             String dni = mDNI.getText().toString();
             String Casa = mCasa;
 
-            mDatabaseReserva.child("Reservas").child(clave).child("Titulo").setValue(nombre);
-            mDatabaseReserva.child("Reservas").child(clave).child("Correo").setValue(direccioncorreo);
-            mDatabaseReserva.child("Reservas").child(clave).child("DNI").setValue(dni);
-            mDatabaseReserva.child("Reservas").child(clave).child("NumAdultos").setValue(numadultos);
-            mDatabaseReserva.child("Reservas").child(clave).child("NumNinos").setValue(numninos);
-            mDatabaseReserva.child("Reservas").child(clave).child("FechaInicio").setValue(fechainicio);
-            mDatabaseReserva.child("Reservas").child(clave).child("FechaFin").setValue(fechafin);
-            mDatabaseReserva.child("Reservas").child(clave).child("NumeroTelefono").setValue(numerotelefono);
-            mDatabaseReserva.child("Reservas").child(clave).child("Casa").setValue(Casa);
+            if(nombre.isEmpty() || numadultos.isEmpty() || numninos.isEmpty() || fechainicio.isEmpty() || numerotelefono.isEmpty() || dni.isEmpty()){
+                Toast.makeText(this, "Alguno de los campos introducidos está vacio", Toast.LENGTH_SHORT).show();
+            }
+            else {
+
+                mDatabaseReserva.child("Reservas").child(clave).child("Titulo").setValue(nombre);
+                mDatabaseReserva.child("Reservas").child(clave).child("Correo").setValue(direccioncorreo);
+                mDatabaseReserva.child("Reservas").child(clave).child("DNI").setValue(dni);
+                mDatabaseReserva.child("Reservas").child(clave).child("NumAdultos").setValue(numadultos);
+                mDatabaseReserva.child("Reservas").child(clave).child("NumNinos").setValue(numninos);
+                mDatabaseReserva.child("Reservas").child(clave).child("FechaInicio").setValue(fechainicio);
+                mDatabaseReserva.child("Reservas").child(clave).child("FechaFin").setValue(fechafin);
+                mDatabaseReserva.child("Reservas").child(clave).child("NumeroTelefono").setValue(numerotelefono);
+                mDatabaseReserva.child("Reservas").child(clave).child("Casa").setValue(Casa);
+
+            }
         }
 
     }

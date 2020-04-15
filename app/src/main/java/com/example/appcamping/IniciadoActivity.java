@@ -2,6 +2,8 @@ package com.example.appcamping;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,21 +13,70 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.appcamping.Gestion.AccionesAdminActivity;
+import com.example.appcamping.adapters.ImageAdapter;
+import com.example.appcamping.models.Upload;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class IniciadoActivity extends AppCompatActivity {
 
-
+    private RecyclerView mRecyclerView;
     private Button vCerrarSesion;
     private FirebaseAuth vAuth;
     private  String admin = "";
     private  String adminbueno = "1pVoigesVeQEFqvdbGV2Xx2xD2W2";
+    private List<Upload> mUploads;
+    private DatabaseReference mDatabaseRef;
+    private ImageAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iniciado);
+
+
+
+        mRecyclerView = findViewById(R.id.recycler_view1);
+        mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        mUploads = new ArrayList<>();
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference("uploads");
+        mDatabaseRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                    Upload upload = postSnapshot.getValue(Upload.class);
+                    mUploads.add(upload);
+                    Collections.reverse(mUploads);
+                }
+
+                mAdapter = new ImageAdapter(IniciadoActivity.this, mUploads);
+
+                mRecyclerView.setAdapter(mAdapter);
+                //mProgressCircle.setVisibility(View.INVISIBLE);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Toast.makeText(IniciadoActivity.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
+                //mProgressCircle.setVisibility(View.INVISIBLE);
+            }
+        });
+
+
+
+
+
         //---------------------------NAVIGATION VIEW ----------------------------------------
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.home);

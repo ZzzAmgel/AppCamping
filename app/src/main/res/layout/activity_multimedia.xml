@@ -4,82 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".MultimediaActivity">
+
 
     <Button
         android:id="@+id/buttonCerrarSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="480dp"
-        android:layout_marginBottom="64dp"
-        android:drawableLeft="@drawable/ic_stat_ic_notification"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/exiticon2"
         android:text="Cerrar Sesion"
         android:textColor="@android:color/white"
         app:backgroundTint="#007C52"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.899"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonContacta"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnPerfil"
-        android:layout_width="111dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:drawableLeft="@drawable/ic_stat_ic_notification"
         android:onClick="Perfil"
         android:text="Perfil"
         android:textColor="@android:color/white"
         app:backgroundTint="#007C52"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toStartOf="@+id/buttonCerrarSesion"
-        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintHorizontal_bias="0.248"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <Button
         android:id="@+id/btnMapaInteres"
         android:layout_width="139dp"
         android:layout_height="91dp"
         android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ovalo"
         android:drawableLeft="@drawable/mapa"
         android:onClick="MapaInteres"
+
         android:text="Lugares de interes"
         android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
         app:layout_constraintEnd_toStartOf="@+id/btnEventos"
-        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/btnEventos"
         android:layout_width="139dp"
         android:layout_height="91dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
-        android:drawableLeft="@drawable/eventos"
+        android:background="@drawable/ovalo"
+        android:drawableLeft="@drawable/eventos2"
         android:onClick="EventosLink"
         android:text="Eventos"
+
         android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonContacta" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/btnGaleria"
         android:layout_width="139dp"
         android:layout_height="91dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/ovalo"
         android:drawableLeft="@drawable/galeria"
         android:onClick="GaleriaLink"
         android:text="Galeria de fotos"
         android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintHorizontal_bias="0.852"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEventos" />
 
@@ -87,13 +89,14 @@
         android:id="@+id/btnMapaReservas"
         android:layout_width="139dp"
         android:layout_height="91dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/ovalo"
         android:drawableLeft="@drawable/mapa"
         android:onClick="MapaReservas"
         android:text="Mapa Interactivo"
         android:textColor="@android:color/white"
-        app:backgroundTint="#007C52"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMapaInteres" />
 
@@ -109,6 +112,15 @@
         app:menu="@menu/menu_navigation"
         />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="205dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rioruralicon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

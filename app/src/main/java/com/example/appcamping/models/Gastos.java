@@ -37,6 +37,6 @@ public class Gastos {
 
 
     public String toString(){
-        return "Día:"+FechaGasto + "\n" + "Nombre del producto" + NombreGasto + "\n" + "Precio:" + Precio;
+        return "Nombre del producto:  " + NombreGasto + "\n" + "Precio:  " + Precio + "\n" + "Día:  "+FechaGasto;
     }
 }

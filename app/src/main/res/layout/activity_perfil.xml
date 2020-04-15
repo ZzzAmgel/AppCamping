@@ -8,8 +8,9 @@
 
     <Button
         android:id="@+id/btnVerificar"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="49dp"
+        android:background="@drawable/ovalo"
         android:onClick="verificarEmail"
         android:text="Verificar direccion"
         app:layout_constraintBottom_toTopOf="@+id/btnCerrarSesion"
@@ -21,22 +22,26 @@
 
     <Button
         android:id="@+id/btnCerrarSesion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#007C52"
+        android:drawableLeft="@drawable/exiticon2"
         android:onClick="CloseSesion"
         android:text="Cerrar Sesion"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnChangePass"
-        app:layout_constraintVertical_bias="0.955" />
+        app:layout_constraintVertical_bias="0.839" />
 
     <Button
         android:id="@+id/btnChangePass"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_width="304dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/ovalo"
         android:onClick="CambiarPass"
         android:text="Cambiar contraseña"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,10 +51,14 @@
 
     <Button
         android:id="@+id/btnSubirImagen"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="49dp"
+
+        android:backgroundTint="#007C52"
+        android:drawableLeft="@drawable/galeria"
         android:onClick="EnviarFoto"
         android:text="Subir Imágen"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/btnCerrarSesion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -94,7 +103,10 @@
         android:id="@+id/btnConfirmarSubida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#007C52"
+        android:drawableLeft="@android:drawable/stat_sys_upload"
         android:text="Enviar Foto"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/btnCerrarSesion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.577"
@@ -107,11 +119,24 @@
         android:layout_width="139dp"
         android:layout_height="91dp"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="28dp"
+        android:drawableTop="@drawable/casa"
         android:onClick="ContactarLink"
         android:text="Contacto"
         android:textColor="@android:color/white"
         app:backgroundTint="#007C52"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/cardview_dark_background"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/menu_navigation"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

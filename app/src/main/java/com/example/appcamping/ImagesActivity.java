@@ -1,17 +1,21 @@
 package com.example.appcamping;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.appcamping.adapters.ImageAdapter;
 import com.example.appcamping.models.Upload;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -64,5 +68,32 @@ public class ImagesActivity extends AppCompatActivity {
                 //mProgressCircle.setVisibility(View.INVISIBLE);
             }
         });
+
+        //---------------------------NAVIGATION VIEW ----------------------------------------
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch(menuItem.getItemId()){
+                    case R.id.reservas:
+                        startActivity(new Intent(getApplicationContext(), ReservasActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.home:
+                        startActivity(new Intent(getApplicationContext(),IniciadoActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.multimedia:
+                        startActivity(new Intent(getApplicationContext(), MultimediaActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
+        //---------------------------NAVIGATION VIEW ----------------------------------------
     }
 }
