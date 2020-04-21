@@ -156,7 +156,7 @@
         android:layout_width="144dp"
         android:layout_height="66dp"
         android:layout_marginTop="80dp"
-        android:text="El precio de las parcelas por día varía conforme a la parcela"
+        android:text="Los preciós depende de las condiciones solicitadas."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

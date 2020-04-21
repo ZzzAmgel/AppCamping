@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppCamping</string>
+    <string name="app_name">RioRural</string>
     <string name="title_activity_maps">Marcador</string>
     <string name="title_activity_menu_principal">MenuPrincipal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

@@ -57,12 +57,12 @@
 34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 34-->[androidx.core:core:1.1.0] C:\Users\Angel\.gradle\caches\transforms-2\files-2.1\f961a727fd6ff1bec6d760c391cc6822\core-1.1.0\AndroidManifest.xml:24:18-86
 35        android:debuggable="true"
-36        android:icon="@mipmap/ic_launcher"
-36-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:16:9-43
+36        android:icon="@drawable/iconoprincipal"
+36-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:16:9-48
 37        android:label="@string/app_name"
 37-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:17:9-41
-38        android:roundIcon="@mipmap/ic_launcher_round"
-38-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:18:9-54
+38        android:roundIcon="@drawable/iconoprincipal"
+38-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:18:9-53
 39        android:supportsRtl="true"
 39-->C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\AndroidManifest.xml:19:9-35
 40        android:testOnly="true"

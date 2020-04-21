@@ -49,8 +49,8 @@
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="imageAsset" value="C:\Users\Angel\Desktop\TFG\AppCamping\app\src\main\res\drawable\rioruralicon.png" />
                                       <entry key="outputName" value="ic_stat_ic_notification" />
-                                      <entry key="theme" value="HOLO_DARK" />
-                                      <entry key="themeColor" value="ffffff" />
+                                      <entry key="theme" value="CUSTOM" />
+                                      <entry key="themeColor" value="48b93a" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -67,6 +67,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="scalingPercent" value="65" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -76,7 +77,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_stat_ic_notification" />
+                                      <entry key="foregroundImage" value="C:\Users\Angel\Desktop\TFG\rioruralicon.png" />
+                                      <entry key="outputName" value="icono_inicio" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -124,11 +126,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>
