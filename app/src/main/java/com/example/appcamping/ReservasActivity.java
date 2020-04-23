@@ -1,18 +1,24 @@
 package com.example.appcamping;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.appcamping.Gestion.MostrarReservas;
+import com.example.appcamping.models.Reservas;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -24,6 +30,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class ReservasActivity extends AppCompatActivity {
@@ -40,6 +47,10 @@ public class ReservasActivity extends AppCompatActivity {
     private EditText mNumTelefono;
     private EditText mDNI;
     private String mCasa;
+    private int dia, mes, ano;
+    private int dia1, mes1, ano1;
+    private Button btnfechaentrada;
+    private Button btnfechasalida;
 
     //COGER FECHAS
 
@@ -51,6 +62,9 @@ public class ReservasActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservas);
+
+        btnfechaentrada = (Button)findViewById(R.id.btnfechasalida);
+        btnfechasalida = (Button)findViewById(R.id.btnfechasalida);
 
 
         View a = findViewById(R.id.btnShowCasa);
@@ -86,6 +100,8 @@ public class ReservasActivity extends AppCompatActivity {
             }
         });
         //---------------------------NAVIGATION VIEW ----------------------------------------
+
+
 
 
 
@@ -171,6 +187,27 @@ public class ReservasActivity extends AppCompatActivity {
         //-----------------------------FIN COMPROBAR FECHAS Y OCULTAR O MOSTRAR
     }
 
+    public void Informacion(View view){
+        new AlertDialog.Builder(ReservasActivity.this)
+                .setIcon(android.R.drawable.ic_dialog_info)
+                .setTitle("Información util")
+                .setMessage("\n" +
+                        "· Desayuno incluido\n" +
+                        "· Niños menores de 6 años gratis\n" +
+                        "· Niños entre 6 y 14 años 15 €")
+                .setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        return;
+
+                        }
+
+
+                }).setNegativeButton("", null).show();
+
+    }
+
+
     public void MapaInteres(View view){
         Intent mapainteres = new Intent(ReservasActivity.this, MapsActivity.class);
         startActivity(mapainteres);
@@ -218,6 +255,44 @@ public class ReservasActivity extends AppCompatActivity {
         String Casa2 = "Casa";
 
         mCasa = Casa2;
+
+    }
+
+    public void Calendarioentrada(View v){
+
+            final Calendar c= Calendar.getInstance();
+            dia=c.get(Calendar.DAY_OF_MONTH);
+            mes=c.get(Calendar.MONTH);
+            ano=c.get(Calendar.YEAR);
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+                @Override
+                public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                    mFechaIn.setText(dayOfMonth+"/"+(month+1)+"/"+year);
+                }
+            }
+                    ,ano,mes,dia);
+            datePickerDialog.show();
+
+
+    }
+
+    public void CalendarioSalida(View v){
+        if(v==btnfechasalida){
+            final Calendar c= Calendar.getInstance();
+            dia1=c.get(Calendar.DAY_OF_MONTH);
+            mes1=c.get(Calendar.MONTH);
+            ano1=c.get(Calendar.YEAR);
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+                @Override
+                public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                    mFechaFin.setText(dayOfMonth+"/"+(month+1)+"/"+year);
+                }
+            }
+                    ,ano1,mes1,dia1);
+            datePickerDialog.show();
+        }
 
     }
 

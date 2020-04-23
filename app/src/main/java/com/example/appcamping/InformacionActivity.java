@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
+import android.app.DatePickerDialog;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -16,6 +17,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +28,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.StorageReference;
+
+import java.util.Calendar;
 
 
 public class InformacionActivity extends AppCompatActivity {
@@ -45,6 +49,10 @@ public class InformacionActivity extends AppCompatActivity {
     private EditText mFechaIn;
     private EditText mFechaFin;
     private EditText mNumTelefono;
+    private int dia, mes, ano;
+    private int dia1, mes1, ano1;
+    private Button btnfechaentrada;
+    private Button btnfechasalida;
 
     TextView markertxt;
 
@@ -57,6 +65,9 @@ public class InformacionActivity extends AppCompatActivity {
         String title=getIntent().getStringExtra("title");
         markertxt.setText(title);
         vAuth = FirebaseAuth.getInstance();
+
+        btnfechaentrada = (Button)findViewById(R.id.btnfechaentrada1);
+        btnfechasalida = (Button)findViewById(R.id.btnfechasalida2);
 
         //------------------- ON CREATE SUBIR BDRTB --------------------
 
@@ -105,7 +116,42 @@ public class InformacionActivity extends AppCompatActivity {
 
     //------------------- CREAR NOTIFICACIÓN PUSH --------------------
 
+    public void Calendarioentrada1(View v){
+        final Calendar c= Calendar.getInstance();
+        dia=c.get(Calendar.DAY_OF_MONTH);
+        mes=c.get(Calendar.MONTH);
+        ano=c.get(Calendar.YEAR);
 
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                mFechaIn.setText(dayOfMonth+"/"+(month+1)+"/"+year);
+            }
+        }
+                ,ano,mes,dia);
+        datePickerDialog.show();
+
+
+    }
+
+    public void CalendarioSalida1(View v){
+        if(v==btnfechasalida){
+            final Calendar c= Calendar.getInstance();
+            dia1=c.get(Calendar.DAY_OF_MONTH);
+            mes1=c.get(Calendar.MONTH);
+            ano1=c.get(Calendar.YEAR);
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+                @Override
+                public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                    mFechaFin.setText(dayOfMonth+"/"+(month+1)+"/"+year);
+                }
+            }
+                    ,ano1,mes1,dia1);
+            datePickerDialog.show();
+        }
+
+    }
 
     public void EnviarReserva(View view){
 

@@ -99,7 +99,7 @@ public class Reservas {
     }
 
     public String toString(){
-        return "Casa o parcela: "+ Casa + "\nDni:" + DNI + "\nDirección de correo: " + Email +"\nDía de Salida"+ FechaFin +"\nDía de Entrada: "+ FechaInicio +"\nNº Adultos: "+ NumAdultos +"\nNº Niños: "+ NumNinos +"\nTelefono: "+ NumeroTelefono +"\nTitular: "+ Titulo;
+        return "Casa o parcela: "+ Casa + "\nDni: " + DNI + "\nDirección de correo: " + Email +"\nDía de Salida: "+ FechaFin +"\nDía de Entrada: "+ FechaInicio +"\nNº Adultos: "+ NumAdultos +"\nNº Niños: "+ NumNinos +"\nTelefono: "+ NumeroTelefono +"\nTitular: "+ Titulo;
     }
 
 }

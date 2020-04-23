@@ -27,61 +27,60 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editAdultos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.803"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/marker"
-        app:layout_constraintVertical_bias="0.897" />
+        app:layout_constraintTop_toBottomOf="@+id/marker" />
 
     <EditText
         android:id="@+id/editAdultos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="nº Adultos"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/editNinos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.803"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editNinos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="nº Niños"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/editFechaIn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.803"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editFechaIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="Día de Inicio"
         android:inputType="date"
         app:layout_constraintBottom_toTopOf="@+id/editFechaSalida"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.803"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editFechaSalida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="144dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="Día de Salida"
         android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/btnEnviarReserva"
+        app:layout_constraintBottom_toTopOf="@+id/editTelefonoMovil"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.803"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -100,29 +99,27 @@
         android:id="@+id/editTelefonoMovil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="Num Telefono"
         android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editdni"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editFechaSalida" />
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editdni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="DNI"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btnEnviarReserva"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTelefonoMovil"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -135,5 +132,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:menu="@menu/menu_navigation"
         />
+
+    <Button
+        android:id="@+id/btnfechaentrada1"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#007C52"
+        android:drawableBottom="@android:drawable/ic_menu_my_calendar"
+        android:onClick="Calendarioentrada1"
+        app:layout_constraintBottom_toTopOf="@+id/editFechaSalida"
+        app:layout_constraintEnd_toStartOf="@+id/editFechaIn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNinos" />
+
+    <Button
+        android:id="@+id/btnfechasalida2"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#007C52"
+        android:drawableBottom="@android:drawable/ic_menu_my_calendar"
+        android:onClick="CalendarioSalida1"
+        app:layout_constraintBottom_toTopOf="@+id/editTelefonoMovil"
+        app:layout_constraintEnd_toStartOf="@+id/editFechaSalida"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFechaIn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

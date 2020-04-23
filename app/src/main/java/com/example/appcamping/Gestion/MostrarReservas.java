@@ -2,13 +2,20 @@ package com.example.appcamping.Gestion;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import com.example.appcamping.IniciadoActivity;
@@ -24,12 +31,14 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class MostrarReservas extends AppCompatActivity {
 
+    private EditText et_buscar;
     DatabaseReference databaseReference;
     ListView listView;
     ArrayList<String> arrayList = new ArrayList<>();
@@ -44,9 +53,26 @@ public class MostrarReservas extends AppCompatActivity {
 
         databaseReference= FirebaseDatabase.getInstance().getReference("Reservas");
         listView= findViewById(R.id.listviewReservas);
-        //btnDelete = (Button) findViewById(R.id.btnBorrarElemento);
         arrayAdapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
         listView.setAdapter(arrayAdapter);
+        et_buscar=(EditText)findViewById(R.id.buscador);
+
+        et_buscar.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                arrayAdapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
         databaseReference.addChildEventListener(new ChildEventListener() {
             @Override
@@ -75,6 +101,37 @@ public class MostrarReservas extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
+            }
+        });
+
+
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                final int which_item = position;
+
+                new AlertDialog.Builder(MostrarReservas.this)
+                        .setIcon(android.R.drawable.ic_delete)
+                        .setTitle("Eliminar reserva?")
+                        .setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                databaseReference.child("Reservas").child(String.valueOf(which_item)).addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                        databaseReference.child(String.valueOf(which_item)).removeValue();
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                                    }
+                                });
+                                arrayList.remove(which_item);
+                                arrayAdapter.notifyDataSetChanged();
+                            }
+                        }).setNegativeButton("No", null).show();
+                return true;
             }
         });
 

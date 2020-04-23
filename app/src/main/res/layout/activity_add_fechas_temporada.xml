@@ -7,17 +7,16 @@
     tools:context=".Gestion.AddFechasTemporada">
 
 
-
     <EditText
         android:id="@+id/editTempAlta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/holo_red_dark"
         android:ems="10"
         android:inputType="date"
         android:text="dd/mm/aaaa"
-        android:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,10 +24,10 @@
         android:id="@+id/textFechaAlta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="80dp"
         android:text="Fechas Temporada Alta"
         app:layout_constraintEnd_toStartOf="@+id/editTempAlta"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,5 +82,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:menu="@menu/menu_navigation"
         />
+
+    <Button
+        android:id="@+id/btnfechaalta"
+        android:layout_width="69dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:drawableBottom="@android:drawable/ic_menu_my_calendar"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/textFechaAlta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

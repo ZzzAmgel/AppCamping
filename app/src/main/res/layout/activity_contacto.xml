@@ -10,25 +10,34 @@
         android:id="@+id/btnLlamarA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
-
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
+        android:backgroundTint="#007C52"
+        android:drawableLeft="@android:drawable/stat_sys_phone_call"
         android:text="Llamar"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMandarMail" />
 
     <Button
         android:id="@+id/btnVisitarWeb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="40dp"
+        android:backgroundTint="#007C52"
+        android:drawableLeft="@drawable/ic_stat_ic_notification"
         android:onClick="IrWeb"
         android:text="Ir a la web"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toStartOf="@+id/btnLlamarA"
-        app:layout_constraintHorizontal_bias="0.205"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMandarMail" />
 
     <TextView
         android:id="@+id/textViewFrom"
@@ -58,6 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Mensaje:"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editextFrom" />
@@ -90,8 +101,9 @@
     <Button
         android:id="@+id/btnMandarMail"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="49dp"
         android:layout_marginTop="52dp"
+        android:background="@drawable/ovalo"
         android:text="Enviar mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

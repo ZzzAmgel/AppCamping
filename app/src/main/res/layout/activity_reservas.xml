@@ -136,22 +136,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textInformación"
-        android:layout_width="158dp"
-        android:layout_height="111dp"
-        android:gravity="center"
-
-        android:text="
-· Desayuno incluido\n
-· Niños menores de 6 años gratis\n
-· Niños entre 6 y 14 años 15 €"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTelefonoMovil" />
-
-    <TextView
         android:id="@+id/textParcelas"
         android:layout_width="144dp"
         android:layout_height="66dp"
@@ -167,13 +151,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#007C52"
         android:drawableLeft="@drawable/ic_stat_ic_notification"
         android:onClick="EnviarReserva"
         android:text="Enviar Reserva"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTelefonoMovil" />
 
@@ -200,5 +186,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:menu="@menu/menu_navigation"
         />
+
+    <Button
+        android:id="@+id/btninformacionuser"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#007C52"
+        android:drawableTop="@android:drawable/ic_dialog_info"
+        android:onClick="Informacion"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toStartOf="@+id/btnEnviarDatosReserva"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTelefonoMovil" />
+
+    <Button
+        android:id="@+id/btnfechaentrada"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#007C52"
+        android:drawableBottom="@android:drawable/ic_menu_my_calendar"
+        android:onClick="Calendarioentrada"
+        app:layout_constraintBottom_toBottomOf="@+id/editFechaInicio"
+        app:layout_constraintEnd_toStartOf="@+id/editFechaInicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDNI" />
+
+    <Button
+        android:id="@+id/btnfechasalida"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#007C52"
+        android:drawableBottom="@android:drawable/ic_menu_my_calendar"
+        android:onClick="CalendarioSalida"
+        app:layout_constraintBottom_toTopOf="@+id/editNumAdultos"
+        app:layout_constraintEnd_toStartOf="@+id/editFechaSalida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFechaInicio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

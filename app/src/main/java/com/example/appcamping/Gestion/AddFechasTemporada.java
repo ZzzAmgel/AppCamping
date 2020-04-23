@@ -3,12 +3,15 @@ package com.example.appcamping.Gestion;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -20,8 +23,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Calendar;
+
 public class AddFechasTemporada extends AppCompatActivity {
 
+    private int dia, mes, ano;
+    private Button bfecha;
     private EditText mFechaTempAlta;
     //private EditText mFechaTemBaja;
     private DatabaseReference mDatabaseFechas;
@@ -31,10 +38,11 @@ public class AddFechasTemporada extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_fechas_temporada);
-
+        bfecha=(Button)findViewById(R.id.btnfechaalta);
         mFechaTempAlta = findViewById(R.id.editTempAlta);
         //mFechaTemBaja = (EditText) findViewById(R.id.editTemBaja);
         mDatabaseFechas = FirebaseDatabase.getInstance().getReference();
+
 
         //---------------------------NAVIGATION VIEW ----------------------------------------
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -63,6 +71,24 @@ public class AddFechasTemporada extends AppCompatActivity {
         });
         //---------------------------NAVIGATION VIEW ----------------------------------------
 
+    }
+
+    public void onClick(View v){
+        if(v==bfecha){
+            final Calendar c= Calendar.getInstance();
+            dia=c.get(Calendar.DAY_OF_MONTH);
+            mes=c.get(Calendar.MONTH);
+            ano=c.get(Calendar.YEAR);
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+                @Override
+                public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                    mFechaTempAlta.setText(dayOfMonth+"/"+(month+1)+"/"+year);
+                }
+            }
+            ,ano,mes,dia);
+            datePickerDialog.show();
+        }
 
     }
 

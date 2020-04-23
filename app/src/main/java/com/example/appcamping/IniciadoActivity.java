@@ -42,7 +42,7 @@ public class IniciadoActivity extends AppCompatActivity {
     private DatabaseReference mDatabaseRef;
     private ImageAdapter mAdapter;
     private int[] mImages = new int[]{
-      R.drawable.campingelcanarportada, R.drawable.campingmap
+      R.drawable.campingelcanarportada, R.drawable.campingmap, R.drawable.imagenaereapiscina, R.drawable.mapainteractivo, R.drawable.casayflores, R.drawable.aereatotal
     };
 
 
