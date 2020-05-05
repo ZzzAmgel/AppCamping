@@ -2,10 +2,17 @@ package com.example.appcamping.Gestion;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.DatePickerDialog;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
@@ -26,6 +33,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.Calendar;
 
 public class AddFechasTemporada extends AppCompatActivity {
+
+    private final static String CHANNEL_ID = "NOTIFICACION";
+    private final static int NOTIFICACION_ID = 0;
 
     private int dia, mes, ano;
     private Button bfecha;
@@ -108,6 +118,8 @@ public class AddFechasTemporada extends AppCompatActivity {
         else {
 
             mDatabaseFechas.child("Fechas").child("FechaTempAlta").setValue(fechaAlta);
+            createNotificationChannel();
+            crearNotificacion();
 
         }
         new Handler().postDelayed(new Runnable() {
@@ -123,5 +135,28 @@ public class AddFechasTemporada extends AppCompatActivity {
     public void Volver(View view){
         Intent volver = new Intent(AddFechasTemporada.this, IniciadoActivity.class);
         startActivity(volver);
+    }
+
+    private void createNotificationChannel(){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            CharSequence name = "Notificación";
+            NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
+    }
+
+    private void crearNotificacion() {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID);
+        builder.setSmallIcon(R.drawable.rioruralicon);
+        builder.setContentTitle("Se ha cambiado la fecha:");
+        builder.setContentText("A partir de: "+ mFechaTempAlta.getText().toString() + ". Los precios mostrados serán superiores");
+        builder.setColor(Color.BLUE);
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        builder.setLights(Color.GREEN, 1000, 1000);
+        builder.setDefaults(Notification.DEFAULT_SOUND);
+
+        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(getApplicationContext());
+        notificationManagerCompat.notify(NOTIFICACION_ID, builder.build());
     }
 }

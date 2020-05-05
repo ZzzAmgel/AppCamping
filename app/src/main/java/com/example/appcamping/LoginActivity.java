@@ -61,12 +61,11 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(!email.isEmpty() && !password.isEmpty()) {
 
-                        Toast.makeText(LoginActivity.this, "Usuario", Toast.LENGTH_SHORT).show();
                         IniciodeSesion();
 
                 }
                     else{
-                    Toast.makeText(LoginActivity.this, "Algo salió mal", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Algo salió mal, comprueba tu conexión", Toast.LENGTH_SHORT).show();
                 }
             }
 

@@ -120,6 +120,10 @@
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-hdpi\\icono_inicio_round.png"
     },
     {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable_registro.jpg.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable\\registro.jpg"
+    },
+    {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_stat_ic_notification.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-xxhdpi\\ic_stat_ic_notification.png"
     },
@@ -270,6 +274,10 @@
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icono_inicio_round.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\mipmap-xxhdpi\\icono_inicio_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable_inicio.jpg.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable\\inicio.jpg"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fondo.png.flat",
@@ -438,6 +446,10 @@
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_stat_ic_notification.png.flat",
         "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable-hdpi\\ic_stat_ic_notification.png"
+    },
+    {
+        "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable_admin.jpg.flat",
+        "source": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\src\\main\\res\\drawable\\admin.jpg"
     },
     {
         "merged": "C:\\Users\\Angel\\Desktop\\TFG\\AppCamping\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_exiticon2.png.flat",

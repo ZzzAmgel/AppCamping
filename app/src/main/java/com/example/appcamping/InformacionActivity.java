@@ -1,6 +1,7 @@
 package com.example.appcamping;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -10,6 +11,7 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -38,7 +40,6 @@ public class InformacionActivity extends AppCompatActivity {
     private final static String CHANNEL_ID = "NOTIFICACION";
     private final static int NOTIFICACION_ID = 0;
     FirebaseAuth vAuth;
-
 
     //PUBLICAR RESERVA BDRTB
 
@@ -153,6 +154,28 @@ public class InformacionActivity extends AppCompatActivity {
 
     }
 
+    public void Informacion(View view){
+        new AlertDialog.Builder(InformacionActivity.this)
+                .setIcon(android.R.drawable.ic_dialog_info)
+                .setTitle("Información util")
+                .setMessage("\n" +
+                        "Los precios de las casas son desde:\n ·2 Personas desde 60€\n ·4 Personas desde 100€\n ·6 Personas desde 150€\n\n" +
+                        "Se le incluye:\n" +
+                        "· Desayuno\n" +
+                        "· Niños menores de 6 años gratis\n" +
+                        "· Niños entre 6 y 14 años 15 €")
+                .setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        return;
+
+                    }
+
+
+                }).setNegativeButton("", null).show();
+
+    }
+
     public void EnviarReserva(View view){
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -176,6 +199,12 @@ public class InformacionActivity extends AppCompatActivity {
             String casa = markertxt.getText().toString();
             String direccioncorreo = vAuth.getCurrentUser().getEmail();
 
+            if(nombre.isEmpty() || numadultos.isEmpty() || numninos.isEmpty() || fechainicio.isEmpty() || numerotelefono.isEmpty()){
+                Toast.makeText(this, "Alguno de los campos introducidos está vacio", Toast.LENGTH_SHORT).show();
+            }
+
+            createNotificationChannel();
+            crearNotificacion();
 
             mDatabaseReserva.child("Reservas").child(ky).child("Titulo").setValue(nombre);
             mDatabaseReserva.child("Reservas").child(ky).child("Correo").setValue(direccioncorreo);
@@ -200,8 +229,10 @@ public class InformacionActivity extends AppCompatActivity {
     private void crearNotificacion() {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID);
         builder.setSmallIcon(R.drawable.rioruralicon);
-        builder.setContentTitle("Se ha realizado una reserva:");
-        builder.setContentText("En breve recibirá una confirmación, sus datos son:"+mNombreApellidos+mNumTelefono+mFechaIn+mFechaFin+mNumAdultos+mNumNinos);
+        builder.setContentTitle("Se ha realizado su pre-reserva:");
+        builder.setContentText("En breve recibirá una confirmación, sus datos son:\nNombre: "+mNombreApellidos.getText().toString()+"\n Tlf: "+mNumTelefono.getText().toString()+
+                "\n Fecha de llegada:"+mFechaIn.getText().toString()+"\n  Fecha Salida:"+mFechaFin.getText().toString()+"\n Adultos:"
+                +mNumAdultos.getText().toString()+"\n niños:"+mNumNinos.getText().toString());
         builder.setColor(Color.BLUE);
         builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
         builder.setLights(Color.GREEN, 1000, 1000);

@@ -8,16 +8,20 @@
 
     <Button
         android:id="@+id/btnEnviarGastos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_width="172dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
         android:backgroundTint="#7fadca"
         android:drawableLeft="@drawable/dinero"
         android:text="Enviar Gasto"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/listMostrarGastos"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPrecio" />
+        app:layout_constraintTop_toBottomOf="@+id/editPrecio"
+        app:layout_constraintVertical_bias="0.192" />
 
     <EditText
         android:id="@+id/editNombreGasto"
@@ -25,8 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Nombre Producto"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,23 +39,23 @@
         android:id="@+id/editPrecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
-        android:inputType="number"
         android:hint="Precio"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNombreGasto" />
 
     <ListView
         android:id="@+id/listMostrarGastos"
-        android:layout_width="405dp"
-        android:layout_height="450dp"
+        android:layout_width="398dp"
+        android:layout_height="388dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEnviarGastos" />
 

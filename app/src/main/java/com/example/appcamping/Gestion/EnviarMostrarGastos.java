@@ -3,9 +3,16 @@ package com.example.appcamping.Gestion;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
@@ -14,6 +21,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.appcamping.IniciadoActivity;
 import com.example.appcamping.MultimediaActivity;
@@ -33,6 +41,9 @@ import java.util.Collections;
 import java.util.Date;
 
 public class EnviarMostrarGastos extends AppCompatActivity {
+
+    private final static String CHANNEL_ID = "NOTIFICACION";
+    private final static int NOTIFICACION_ID = 0;
 
     ListView listview;
     ArrayList<String> arrayList = new ArrayList<>();
@@ -64,9 +75,16 @@ public class EnviarMostrarGastos extends AppCompatActivity {
                 String precio = mEditPrecio.getText().toString();
                 String fechagasto = mFechaGasto;
 
+                if(nombregasto.isEmpty() || precio.isEmpty()){
+                    Toast.makeText(EnviarMostrarGastos.this, "Algún campo esta vacio", Toast.LENGTH_SHORT).show();
+                }
+
                 mDatabaseGastos.child("Gastos").child(key).child("NombreGasto").setValue(nombregasto);
                 mDatabaseGastos.child("Gastos").child(key).child("Precio").setValue(precio);
                 mDatabaseGastos.child("Gastos").child(key).child("FechaGasto").setValue(fechagasto);
+                createNotificationChannel();
+                crearNotificacion();
+
 
 
             }
@@ -134,6 +152,29 @@ public class EnviarMostrarGastos extends AppCompatActivity {
         });
         //---------------------------NAVIGATION VIEW ----------------------------------------
 
+    }
+
+    private void createNotificationChannel(){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            CharSequence name = "Notificación";
+            NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
+    }
+
+    private void crearNotificacion() {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID);
+        builder.setSmallIcon(R.drawable.rioruralicon);
+        builder.setContentTitle("Se ha almacenado correctamente:");
+        builder.setContentText("Datos del gasto:\n "+mEditNombreGasto.getText().toString()+"\n "+mEditPrecio.getText().toString() +"\n "+mFechaGasto);
+        builder.setColor(Color.BLUE);
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        builder.setLights(Color.GREEN, 1000, 1000);
+        builder.setDefaults(Notification.DEFAULT_SOUND);
+
+        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(getApplicationContext());
+        notificationManagerCompat.notify(NOTIFICACION_ID, builder.build());
     }
 
 }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/admin">
     tools:context=".MultimediaActivity">
 
 
@@ -42,8 +43,9 @@
         android:id="@+id/btnMapaInteres"
         android:layout_width="139dp"
         android:layout_height="91dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/ovalo"
         android:backgroundTint="#007C52"
         android:drawableLeft="@drawable/mapa"
@@ -51,7 +53,6 @@
         android:text="Lugares de interes"
         android:textColor="@android:color/primary_text_dark"
         app:layout_constraintEnd_toStartOf="@+id/btnEventos"
-        app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -59,6 +60,7 @@
         android:id="@+id/btnEventos"
         android:layout_width="139dp"
         android:layout_height="91dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/ovalo"
@@ -68,37 +70,40 @@
         android:text="Eventos"
         android:textColor="@android:color/primary_text_dark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMapaInteres"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/btnGaleria"
         android:layout_width="139dp"
         android:layout_height="91dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/ovalo"
         android:backgroundTint="#007C52"
         android:drawableLeft="@drawable/galeria"
+
         android:onClick="GaleriaLink"
         android:text="Galeria de fotos"
-
         android:textColor="@android:color/primary_text_dark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMapaReservas"
         app:layout_constraintTop_toBottomOf="@+id/btnEventos" />
 
     <Button
         android:id="@+id/btnMapaReservas"
         android:layout_width="139dp"
         android:layout_height="91dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/ovalo"
         android:backgroundTint="#007C52"
         android:drawableLeft="@drawable/mapa"
         android:onClick="MapaReservas"
-        android:text="Mapa Interactivo"
 
+        android:text="Mapa de casas"
         android:textColor="@android:color/primary_text_dark"
         app:layout_constraintEnd_toStartOf="@+id/btnGaleria"
         app:layout_constraintStart_toStartOf="parent"

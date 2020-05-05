@@ -3,11 +3,18 @@ package com.example.appcamping;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.DatePickerDialog;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
@@ -34,6 +41,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class ReservasActivity extends AppCompatActivity {
+
+    private final static String CHANNEL_ID = "NOTIFICACION";
+    private final static int NOTIFICACION_ID = 0;
 
     FirebaseAuth vAuth;
     private DatabaseReference mDatabase;
@@ -325,6 +335,9 @@ public class ReservasActivity extends AppCompatActivity {
             }
             else {
 
+                createNotificationChannel();
+                crearNotificacion();
+
                 mDatabaseReserva.child("Reservas").child(clave).child("Titulo").setValue(nombre);
                 mDatabaseReserva.child("Reservas").child(clave).child("Correo").setValue(direccioncorreo);
                 mDatabaseReserva.child("Reservas").child(clave).child("DNI").setValue(dni);
@@ -338,6 +351,31 @@ public class ReservasActivity extends AppCompatActivity {
             }
         }
 
+    }
+
+    private void createNotificationChannel(){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            CharSequence name = "Notificación";
+            NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
+    }
+
+    private void crearNotificacion() {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID);
+        builder.setSmallIcon(R.drawable.rioruralicon);
+        builder.setContentTitle("Se ha realizado su pre-reserva:");
+        builder.setContentText("En breve recibirá una confirmación, sus datos son:\nNombre: "+mNombreApellidos.getText().toString()+"\n Tlf: "+mNumTelefono.getText().toString()+
+                "\n Fecha de llegada:"+mFechaIn.getText().toString()+"\n  Fecha Salida:"+mFechaFin.getText().toString()+"\n Adultos:"
+                +mNumAdultos.getText().toString()+"\n niños:"+mNumNinos.getText().toString());
+        builder.setColor(Color.BLUE);
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        builder.setLights(Color.GREEN, 1000, 1000);
+        builder.setDefaults(Notification.DEFAULT_SOUND);
+
+        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(getApplicationContext());
+        notificationManagerCompat.notify(NOTIFICACION_ID, builder.build());
     }
 
 }

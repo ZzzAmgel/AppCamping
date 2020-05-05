@@ -10,32 +10,33 @@
         android:id="@+id/marker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:text="Marker Title"
         android:textAlignment="center"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="Nombre y Apellidos"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editAdultos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.803"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/marker" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editAdultos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="nº Adultos"
         android:inputType="number"
@@ -48,7 +49,7 @@
         android:id="@+id/editNinos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="nº Niños"
         android:inputType="number"
@@ -61,10 +62,11 @@
         android:id="@+id/editFechaIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
+        android:enabled="false"
         android:hint="Día de Inicio"
-        android:inputType="date"
+        android:inputType="none"
         app:layout_constraintBottom_toTopOf="@+id/editFechaSalida"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.803"
@@ -74,10 +76,11 @@
         android:id="@+id/editFechaSalida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
+        android:enabled="false"
         android:hint="Día de Salida"
-        android:inputType="date"
+        android:inputType="none"
         app:layout_constraintBottom_toTopOf="@+id/editTelefonoMovil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.803"
@@ -90,6 +93,9 @@
         android:layout_marginBottom="20dp"
         android:onClick="EnviarReserva"
         android:text="Enviar Reserva"
+        android:backgroundTint="#007C52"
+        android:drawableLeft="@drawable/ic_stat_ic_notification"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.857"
@@ -99,7 +105,7 @@
         android:id="@+id/editTelefonoMovil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="Num Telefono"
         android:inputType="number"
@@ -112,7 +118,7 @@
         android:id="@+id/editdni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="DNI"
         android:inputType="textPersonName"
@@ -146,6 +152,18 @@
         app:layout_constraintTop_toBottomOf="@+id/editNinos" />
 
     <Button
+        android:id="@+id/btninformacionuser"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#007C52"
+        android:drawableTop="@android:drawable/ic_dialog_info"
+        android:onClick="Informacion"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/btnfechasalida2"
         android:layout_width="57dp"
         android:layout_height="47dp"
@@ -157,5 +175,16 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editFechaIn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="136dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rioruralicon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
